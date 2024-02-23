@@ -23,29 +23,29 @@ function browsersync() {
 function scripts() {
 	return src(["node_modules/jquery/dist/jquery.min.js", "app/js/app.js"])
 		.pipe(concat("app.min.js"))
-		.pipe(dest("app/assets/js/"))
+		.pipe(dest("app/js/"))
 		.pipe(browserSync.stream())
 }
 
 function styles() {
-	return src("app/assets/scss/**/*.scss")
+	return src("app/scss/**/*.scss")
 		.pipe(sass())
 		.pipe(concat("app.min.css"))
 		.pipe(autoprefixer({ overrideBrowserslist: ["last 3 versions"] }))
-		.pipe(dest("app/assets/css/"))
+		.pipe(dest("app/css/"))
 		.pipe(browserSync.stream())
 }
 
 async function images() {
-	return src(["app/assets/images/**/*"], { base: "app" }).pipe(dest("dist"))
+	return src(["app/images/**/*"], { base: "app" }).pipe(dest("dist"))
 }
 
 function buildcopy() {
 	return src(
 		[
-			"app/assets/css/**/*.min.css",
-			"app/assets/js/**/*.min.js",
-			"app/assets/images/**/*",
+			"app/css/**/*.min.css",
+			"app/js/**/*.min.js",
+			"app/images/**/*",
 			"app/**/*.html",
 		],
 		{ base: "app" }
@@ -63,7 +63,7 @@ function startwatch() {
 
 	watch("app/**/*.html").on("change", browserSync.reload)
 
-	watch("app/assets/images/src/**/*", images)
+	watch("app/images/src/**/*", images)
 }
 
 exports.browsersync = browsersync
