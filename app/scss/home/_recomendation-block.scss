@@ -1,0 +1,97 @@
+.recomendation-block {
+  background: #F1F1F1;
+  padding-bottom: 80px;
+  .recomendation-block-wrapper {
+    padding: 60px 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    background: #00254A;
+    border-radius: 40px;
+    @media(max-width: 991px) {
+      border-radius: 20px;
+      padding: 40px 20px;
+      max-width: 355px;
+      width: 100%;
+      margin: auto;
+    }
+    .recomendation-block-wrapper-content {
+      max-width: 600px;
+      margin: 0 auto;
+      h2 {
+        max-width: 550px;
+        text-align: center;
+        margin: 0 auto;
+        color: white;
+        margin-bottom: 20px;
+        @media(max-width: 991px) {
+          font-size: 30px;
+          line-height: 39px;
+        }
+      }
+      p {
+        font-size: 20px;
+        line-height: 32px;
+        color: #A5BACE;
+        text-align: center;
+        margin: 0;
+        @media(max-width: 991px) {
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+      form {
+        margin-top: 30px;
+        .field{
+          position: relative;
+          input {
+            height: 60px;
+            background: white;
+            padding-left: 24px;
+            width: 100%;
+            border-radius: 30px;
+            border: none;
+            font-size: 16px;
+            line-height: 25px;
+            &::placeholder {
+              color: #535353;
+              font-size: 16px;
+              line-height: 25px;
+            }
+            &[type=submit] {
+              height: 56px;
+              background: #FF7E00;
+              max-width: 180px;
+              padding: 0;
+              position: absolute;
+              top: 50%;
+              right: 2px;
+              transform: translateY(-50%);
+              @media(max-width: 991px) {
+                max-width: 111px;
+              }
+            }
+          }
+        }
+        label {
+          display: flex;
+          gap: 10px;
+          font-size: 14px;
+          line-height: 22px;
+          color: #CEDFEF;
+          margin-top: 21px;
+        }
+      }
+    }
+  }
+}
+input[type=checkbox]:checked ~ span {
+  background: url("../../images/checked.png") center no-repeat;
+  min-width: 20px;
+  height: 20px;
+}
+label span {
+  min-width: 20px;
+  height: 20px;
+  background: url("../../images/unchecked.png")center no-repeat;
+  display: block;
+}

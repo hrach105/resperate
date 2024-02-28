@@ -1,0 +1,106 @@
+.product-block {
+  width: 100%;
+  background: #F1F1F1;
+  padding: 80px 0;
+  .separate-product {
+    max-width: 1075px;
+    margin: auto;
+    width: 100%;
+    background: white;
+    padding: 43px 0 54px 0;
+    border-radius: 40px;
+    display: flex;
+    gap: 44px;
+    @media(max-width: 991px) {
+      flex-direction: column-reverse;
+      max-width: 335px;
+      width: 100%;
+      border-radius: 20px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .product-image {
+      max-width: 516px;
+      height: 293px;
+      margin-left: -50px;
+      @media(max-width: 991px) {
+        height: 163px;
+        width: 100%;
+        margin: auto;
+        margin-left: 0;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .product-description {
+      max-width: 514px;
+      width: 100%;
+      h3 {
+        font-size: 32px;
+        line-height: 41px;
+        color: #151515;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 16px;
+        @media(max-width: 991px) {
+          font-size: 30px;
+          line-height: 39px;
+          margin-bottom: 12px;
+        }
+      }
+      .order-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+        p {
+          font-size: 20px;
+          line-height: 32px;
+          font-weight: 500;
+          color: #151515;
+          margin: 0;
+          @media(max-width: 991px) {
+            font-size: 18px;
+          }
+        }
+      }
+      .seperate-product-description {
+        color: #535353;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 12px;
+      }
+      .seperate-pruct-link {
+        max-width: 180px;
+        margin-top: 30px;
+        @media(max-width: 991px) {
+          max-width: 295px;
+        }
+      }
+    }
+  }
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @media(max-width: 991px) {
+    justify-content: center;
+  }
+  p {
+    font-size: 32px;
+    line-height: 43px;
+    font-weight: 600;
+    color: #0D5AA6;
+    @media(max-width: 991px) {
+
+    }
+    sup {
+      font-size: 20px;
+    }
+  }
+}

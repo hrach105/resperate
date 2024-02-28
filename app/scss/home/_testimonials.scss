@@ -1,0 +1,99 @@
+.testimonials {
+  background: linear-gradient(180deg, #003467 0%, #00254A 100%);
+  padding: 80px 0;
+  @media(max-width: 991px) {
+    padding: 40px 0;
+    min-height: 450px;
+  }
+  .testimonial-wrapper {
+    max-width: 771px;
+    width: 100%;
+    margin:0 auto;
+    position: relative;
+    @media(max-width: 991px) {
+      max-width: 335px;
+    }
+    .testimonial-slider {
+      .slick-arrow {
+        z-index: 1;
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FF7E00;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        @media(max-width: 991px) {
+          top: auto;
+          bottom: -100px;
+          transform: translateY(0) rotate(0) !important;
+        }
+        svg {
+          path {
+            stroke: white;
+          }
+        }
+        &.slick-next {
+          right: 0;
+          transform: translateY(-50%) rotate(-180deg) !important;
+          @media(max-width: 991px) {
+            transform: translateY(0) rotate(-180deg) !important;
+            right: 30%;
+          }
+        }
+        &.slick-prev {
+          left: 0;
+          @media(max-width: 991px) {
+            left: 30%;
+          }
+        }
+        &.slick-disabled {
+          background: #4D6680;
+          svg {
+            path {
+              stroke: white;
+            }
+          }
+        }
+      }
+      position: relative;
+      .testimonial-item {
+        text-align: center;
+        p {
+          font-size: 24px;
+          line-height: 31px;
+          color: #CEDFEF;
+          font-weight: 400;
+          font-family: "Red Hat Display", sans-serif;
+          margin-top: 0;
+          margin-bottom: 30px;
+
+        }
+        img {
+          display: block;
+          margin: auto;
+        }
+        h4 {
+          font-size: 32px;
+          line-height: 41px;
+          color: white;
+          font-weight: 400;
+          font-family: "Red Hat Display", sans-serif;
+          max-width: 500px;
+          margin:12px auto 0;
+          @media(max-width: 991px) {
+            font-size: 24px;
+            line-height: 31px;
+          }
+        }
+        button {
+          margin:30px auto 0;
+        }
+      }
+    }
+  }
+}

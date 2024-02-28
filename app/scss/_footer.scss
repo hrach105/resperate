@@ -1,0 +1,124 @@
+footer {
+  background: #001931;
+  padding: 80px 0;
+  @media(max-width: 991px) {
+    padding: 40px 10px;
+  }
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 991px) {
+      flex-wrap: wrap;
+    }
+    .footer-item {
+      .company-personal-info {
+        display: flex;
+        flex-direction: column;
+        .logo {
+          margin-bottom: 30px;
+        }
+        a {
+          font-size: 16px;
+          color: #CEDFEF;
+          line-height: 25px;
+          margin-bottom: 14px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          @media(max-width: 991px) {
+
+          }
+        }
+       .company-location {
+          margin-top: 28px;
+          font-size: 14px;
+          line-height: 22px;
+          color: #CEDFEF;
+          max-width: 268px;
+          width: 100%;
+          text-decoration: none;
+         @media(max-width: 991px) {
+           max-width: 100%;
+           margin-bottom: 40px;
+         }
+        }
+      }
+      .footer-menu {
+        width: 100%;
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          list-style-type: none;
+          li {
+            a {
+              font-size: 16px;
+              line-height: 25px;
+              font-weight: 400;
+              color: #CEDFEF;
+            }
+          }
+        }
+      }
+      .info-block {
+        display: flex;
+        gap:10px;
+        max-width: 470px;
+        @media(max-width: 991px) {
+          margin-bottom: 16px;
+        }
+        svg {
+          min-width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 22px;
+          color: #CEDFEF;
+        }
+      }
+      &:last-child {
+        margin-top: 40px;
+      }
+    }
+  }
+  hr {
+    border: 1px solid #365B81;
+    margin-top: 80px;
+    margin-bottom: 41px;
+    @media(max-width: 991px) {
+      margin: 40px 0;
+    }
+  }
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      margin: 0;
+      color: #CEDFEF;
+      font-size: 14px;
+      line-height: 22px;
+      a {
+        color: #CEDFEF;
+        border-bottom: 1px solid;
+      }
+    }
+    .socials {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      a {
+        font-size: 0;
+      }
+
+    }
+    @media(max-width: 991px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
+
+
+

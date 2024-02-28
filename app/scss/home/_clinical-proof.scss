@@ -1,0 +1,91 @@
+.clinical-proof-banner {
+  width: 100%;
+  padding: 0 20px;
+  background: #F1F1F1;
+  .clinical-proof-banner-wrapper {
+    padding: 80px 20px;
+    background: #002143;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 152px;
+    border-radius: 20px;
+    @media(max-width: 1366px) {
+      gap: 100px;
+    }
+    @media(max-width: 991px) {
+      gap: 40px;
+      padding: 40px 20px;
+      flex-direction: column;
+      max-width: 335px;
+      width: 100%;
+      margin: auto;
+    }
+    .clinical-proof-banner-wrapper-description {
+      max-width: 499px;
+      @media(max-width: 991px) {
+        text-align: center;
+      }
+      h3 {
+        max-width: 418px;
+        font-size: 40px;
+        line-height: 52px;
+        font-weight: 400;
+        font-family: "Red Hat Display", sans-serif;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 20px;
+        @media(max-width: 991px) {
+          margin: 0 auto;
+          font-size: 30px;
+          line-height: 39px;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #CEDFEF;
+        margin: 0;
+        @media(max-width: 991px) {
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+      button {
+        margin-top: 30px;
+        padding: 0 31.5px;
+        gap: 17px;
+        @media(max-width: 991px) {
+         max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .clinical-proof-banner-wrapper-video {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 560px;
+      width: 100%;
+      height: 450px;
+      position: relative;
+      border-radius: 20px;
+      box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+      @media(max-width: 991px) {
+        height: 200px;
+      }
+      .play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        cursor: pointer;
+        @media(max-width: 991px) {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}

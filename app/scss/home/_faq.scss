@@ -1,0 +1,85 @@
+.faq {
+  padding: 80px 0;
+  background: #F1F1F1;
+  .faq-block {
+    padding: 80px 0;
+    background: white;
+    border-radius: 40px;
+    @media(max-width: 991px) {
+      max-width: 355px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .faqs {
+      max-width: 800px;
+      margin: 0 auto;
+      .faq-item {
+        margin-bottom: 16px;
+        .headers {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 16px;
+          border-bottom: 1px solid #EBEBEB;
+          cursor: pointer;
+          svg {
+            min-width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            &.minus {
+              path {
+                &:last-child {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        h5 {
+          font-weight: 500;
+          font-family: "Red Hat Display", sans-serif;
+          font-size: 20px;
+          color: #151515;
+          margin: 0;
+          @media(max-width: 991px) {
+            font-size: 18px;
+            line-height: 23px;
+            font-weight: 400;
+          }
+        }
+        .faq-content {
+          height: 0;
+          overflow: hidden;
+          transition: .5s;
+
+          p {
+            margin-bottom: 21px;
+            font-size: 18px;
+            line-height: 28px;
+            color: #535353;
+            @media(max-width: 991px) {
+              font-size: 16px;
+              line-height: 25px;
+            }
+          }
+          &.show {
+            height: auto;
+            transition: .5s;
+            margin-top: 21px;
+          }
+        }
+      }
+    }
+    a {
+      &.main-btn {
+        max-width: 220px;
+        margin: 40px auto 0;
+        padding: 0 37px;
+      }
+    }
+  }
+}

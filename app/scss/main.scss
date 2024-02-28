@@ -1,8 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
 @import "normalize";
+@import "header";
+@import "./home/banner";
+@import "./home/clinical-proof";
+@import "./home/seperate-product";
+@import "./home/simple_effective";
+@import "./home/reviews-slider";
+@import "./home/verified-reviews";
+@import "./home/testimonials";
+@import "./home/faq";
+@import "./home/recomendation-block";
+@import "./footer";
+@import "./popup";
 
 
 
-body {
-	background-color: red;
-}
+
+

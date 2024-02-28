@@ -1,0 +1,232 @@
+.banner {
+  background: #F1F1F1;
+  width: 100%;
+  padding: 80px 0 60px;
+  @media(max-width: 991px) {
+    padding-top: 40px;
+  }
+  .banner-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 43px;
+    max-width: 1170px;
+    margin: auto;
+    @media(max-width: 991px) {
+      flex-direction: column;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .banner-description {
+      max-width: 490px;
+      width: 100%;
+      @media(max-width: 991px) {
+        text-align: center;
+        margin: auto;
+      }
+      h1 {
+        font-size: 60px;
+        line-height: 66px;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 400;
+        margin-bottom: 24px;
+        margin-top: 0;
+        @media(max-width: 991px) {
+          font-size: 40px;
+          line-height: 44px;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        margin-bottom: 24px;
+        color: #535353;
+        @media(max-width: 991px) {
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+      button {
+        &.main-btn {
+          @media(max-width: 991px) {
+            margin: auto;
+            max-width: 335px;
+            width: 100%;
+            margin-top: 40px;
+          }
+
+        }
+
+      }
+    }
+    .banner-image {
+      max-width: 738px;
+      max-height: 516px;
+      @media(max-width: 991px) {
+        max-width: 342px;
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      &.for-mobile {
+        display: none;
+        @media(max-width: 991px) {
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+.rating-block {
+  margin-top: 90px;
+  max-width: 438px;
+  width: 100%;
+  background: #F7F7F7;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  @media(max-width: 991px) {
+    margin: 16px auto 0;
+  }
+  .rate {
+    .rate-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 12px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .rate-result {
+      p {
+        font-size: 24px;
+        line-height: 38px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: #151515;
+        span {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          @media(max-width: 991px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .reviews {
+    .peoples {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+      .people-item {
+        &:not(:first-child) {
+          margin-left: -6px;
+        }
+        img {
+          width: 24px;
+          height: 24px;
+          border-radius: 100%;
+        }
+      }
+    }
+    span {
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 700 ;
+      color: #00254A;
+    }
+  }
+}
+
+.information-block {
+  width: 100%;
+  background: #F1F1F1;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  @media(max-width: 991px) {
+    padding-top: 20px;
+  }
+  .information-block-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    @media(max-width: 991px) {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 8px;
+      max-width: 335px;
+      width: 100%;
+      margin: auto;
+    }
+    .information-item {
+      background:#F7F7F7;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 277px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      @media(max-width: 991px) {
+        padding: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+      }
+      .icon {
+        min-width: 72px;
+        height: 72px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        @media(max-width: 991px) {
+          min-width: 60px;
+          height: 60px;
+        }
+        img {
+          width: 32px;
+          height: 32px;
+          @media(max-width: 991px) {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+      .information-item-name {
+        h4 {
+          color: #365B81;
+          font-weight: 700;
+          font-family: "Red Hat Display", sans-serif;
+          margin-bottom: 0;
+          font-size: 31px;
+          line-height: 51px;
+          margin-top: 0;
+          @media(max-width: 991px) {
+            font-size: 24px;
+            line-height: 38px;
+          }
+        }
+        span {
+          font-size: 14px;
+          font-weight: 600;
+          color: #365B81;
+          line-height: 22px;
+
+        }
+      }
+    }
+  }
+}
