@@ -1,0 +1,79 @@
+.support-center {
+  margin-top: 80px;
+  @media(max-width: 1200px) {
+    padding: 20px 20px 40px;
+    margin-top: 0;
+  }
+  .page-title {
+    @media(max-width: 767px) {
+     text-align: center;
+    }
+  }
+  .tabs {
+    border-bottom: 2px solid #E3E3E3;
+    max-width: 600px;
+    width: 100%;
+    @media(max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+
+    }
+    button {
+      border: none;
+      background: transparent;
+      font-size: 20px;
+      line-height: 20px;
+      color: #151515;
+      font-weight: 700;
+      padding: 20px 32px;
+      position: relative;
+      transition: .5s;
+      cursor: pointer;
+      @media(max-width: 767px) {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 16px 24px;
+        text-align: center;
+      }
+      &.active {
+        &::before {
+          content: '';
+          width: 100%;
+          height: 2px;
+          background: #FF7E00;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          transition: .5s;
+        }
+      }
+    }
+  }
+  .content {
+    margin: 40px 0 80px;
+    @media(max-width: 767px) {
+      max-width: 335px;
+      margin: 40px auto;
+      width: 100%;
+    }
+    &.hidden {
+      display: none;
+    }
+    .faq-block {
+      padding: 0;
+      margin-bottom: 60px;
+      h3 {
+        margin-bottom: 30px;
+      }
+      .faqs {
+        max-width: 100%;
+      }
+    }
+  }
+  .recomendation-block {
+    background: transparent;
+    margin-top: 80px;
+  }
+}

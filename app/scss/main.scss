@@ -1,5 +1,5 @@
-
 @import "normalize";
+@import "responsive";
 @import "header";
 @import "./home/banner";
 @import "./home/clinical-proof";
@@ -12,6 +12,11 @@
 @import "./home/recomendation-block";
 @import "./footer";
 @import "./popup";
+@import "./about-us/about-us";
+@import "support-center/faqs";
+@import "support-center/videos";
+@import "support-center/downloads";
+@import "support-center/support-contact";
 
 
 

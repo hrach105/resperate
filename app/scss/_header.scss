@@ -1,4 +1,7 @@
 header {
+  @media(max-width: 991px) {
+    margin-bottom: 20px;
+  }
   .top-header {
     background: linear-gradient(180deg, #003467 0%, #00254A 100%);
     .sale-banner {
@@ -44,9 +47,13 @@ header {
     width: 100%;
     margin: 0 auto;
 
-    @media(max-width: 991px) {
-
+    @media(max-width: 1200px) {
       padding: 20px;
+    }
+    @media(max-width: 767px) {
+      max-width: 335px;
+      margin: auto;
+      padding: 20px 0;
     }
     .logo {
       img {
@@ -98,6 +105,7 @@ header {
   }
   .mobile-menu {
     display: none;
+
     &.show {
       display: block;
       width: 100%;
@@ -108,6 +116,7 @@ header {
       height: 100vh;
       padding: 30px 20px;
       border-top: 1px solid #EBEBEB;
+
       ul {
         display: flex;
         flex-direction: column;

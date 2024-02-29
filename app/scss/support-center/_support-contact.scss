@@ -1,0 +1,75 @@
+.support-contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 30px;
+  @media(max-width: 991px) {
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    gap: 20px;
+  }
+  .support-contact-item {
+    width: 100%;
+    background: #F7F7F7;
+    padding: 20px;
+    border-radius: 20px;
+    .support-contact-item-header {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      .icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media(max-width: 991px) {
+          width: 60px;
+          height: 60px;
+        }
+        svg {
+          width: 40px;
+          height: 40px;
+          @media(max-width: 991px) {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+      .text {
+        font-size: 24px;
+        line-height: 31px;
+        font-weight: 400;
+        color: #151515;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 400;
+        @media(max-width: 991px) {
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+    }
+    .inner-info {
+      font-size: 18px;
+      line-height: 29px;
+      color: #535353;
+      font-weight: 400;
+      @media(max-width: 991px) {
+        font-size: 16px;
+        line-height: 25px;
+      }
+      a {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #535353;
+        @media(max-width: 991px) {
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}

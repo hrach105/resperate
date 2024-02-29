@@ -1,0 +1,30 @@
+.page-title {
+  font-size: 60px;
+  line-height: 66px;
+  color: #151515;
+  font-weight: 400;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  text-transform: capitalize;
+  @media(max-width: 991px) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.container {
+  max-width: 1171px;
+  margin: 0 auto;
+}
+.section-title {
+  font-weight: 400;
+  font-family: "Red Hat Display", sans-serif;
+  color: #151515;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0;
+  padding: 0;
+  @media(max-width: 767px) {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
