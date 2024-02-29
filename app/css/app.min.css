@@ -462,13 +462,9 @@ header .bottom-header {
   width: 100%;
   margin: 0 auto;
 }
-header .bottom-header.border {
-  border-bottom: 1px solid #EBEBEB;
-}
 @media (max-width: 991px) {
   header .bottom-header {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
   }
 }
 header .bottom-header .logo img {
@@ -537,7 +533,8 @@ header .mobile-menu.show {
   top: 15%;
   left: 0;
   height: 100vh;
-  padding: 0 20px;
+  padding: 30px 20px;
+  border-top: 1px solid #EBEBEB;
 }
 header .mobile-menu.show ul {
   display: -webkit-box;

@@ -43,12 +43,10 @@ header {
     max-width: 1171px;
     width: 100%;
     margin: 0 auto;
-    &.border {
-      border-bottom: 1px solid #EBEBEB;
-    }
+
     @media(max-width: 991px) {
-      padding-left: 20px;
-      padding-right: 20px;
+
+      padding: 20px;
     }
     .logo {
       img {
@@ -108,7 +106,8 @@ header {
       top: 15%;
       left: 0;
       height: 100vh;
-      padding: 0 20px;
+      padding: 30px 20px;
+      border-top: 1px solid #EBEBEB;
       ul {
         display: flex;
         flex-direction: column;
