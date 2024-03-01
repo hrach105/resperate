@@ -28,3 +28,9 @@
     line-height: 39px;
   }
 }
+
+body{
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+}

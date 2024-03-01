@@ -83,10 +83,10 @@
     <div class="container">
         <h1 class="page-title">support center</h1>
         <div class="tabs">
-            <button class="active" onclick="showContent('faq')">FAQ</button>
-            <button onclick="showContent('videos')">Videos</button>
-            <button onclick="showContent('downloads')">Downloads</button>
-            <button onclick="showContent('contact')">Contact Us</button>
+            <button class="active"  data-tab-target="faq">FAQ</button>
+            <button data-tab-target="videos">Videos</button>
+            <button  data-tab-target="downloads">Downloads</button>
+            <button  data-tab-target="contact">Contact Us</button>
         </div>
         <div id="faq" class="content">
             <div class="faq-block">
@@ -536,25 +536,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <script>
-    function showContent(tabId) {
-        const contents = document.querySelectorAll('.content');
-        contents.forEach(content => {
-            content.classList.add('hidden');
-        });
+    $(document).ready(function() {
+        $('.tabs button').on('click', function() {
+            const tabId = $(this).data('tab-target');
 
-        const tabs = document.querySelectorAll('.tabs button');
-        tabs.forEach(tab => {
-            tab.classList.remove('active');
-        });
+            $('.tabs button').removeClass('active');
 
-        document.getElementById(tabId).classList.remove('hidden');
+            $(this).addClass('active');
 
-        tabs.forEach(tab => {
-            if (tab.getAttribute('data-target') === tabId) {
-                tab.classList.add('active');
-            }
+            $('.content').addClass('hidden');
+
+            $('#' + tabId).removeClass('hidden');
         });
-    }
+    });
 </script>
 <script>
     $('.faq-item .headers').click(function () {

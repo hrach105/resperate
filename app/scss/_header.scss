@@ -1,7 +1,5 @@
 header {
-  @media(max-width: 991px) {
-    margin-bottom: 20px;
-  }
+
   .top-header {
     background: linear-gradient(180deg, #003467 0%, #00254A 100%);
     .sale-banner {
@@ -51,9 +49,9 @@ header {
       padding: 20px;
     }
     @media(max-width: 767px) {
-      max-width: 335px;
-      margin: auto;
-      padding: 20px 0;
+      padding: 20px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #EBEBEB;
     }
     .logo {
       img {
@@ -111,7 +109,6 @@ header {
       width: 100%;
       background: white;
       position: absolute;
-      top: 15%;
       left: 0;
       height: 100vh;
       padding: 30px 20px;
