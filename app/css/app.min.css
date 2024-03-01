@@ -3093,7 +3093,75 @@ footer .footer-bottom .socials a {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: -49%;
+}
+
+.general-reviews {
+  padding: 80px 0;
+}
+.general-reviews h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.general-reviews .general-reviews-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+.general-reviews .general-reviews-wrapper .general-reviews-wrapper-item {
+  background: white;
+  padding: 20px 30px 20px 20px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .image {
+  min-width: 120px;
+  height: 120px;
+}
+.general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .image img {
+  min-width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+.general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .description h4 {
+  font-size: 24px;
+  line-height: 31px;
+  color: #151515;
+  font-weight: 400;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+}
+.general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .description p {
+  margin: 12px 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #535353;
+  display: -webkit-box;
+  overflow: hidden;
+  max-height: 116px;
+  min-height: 116px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .description span {
+  font-size: 16px;
+  line-height: 25px;
+  color: #002143;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  cursor: pointer;
 }
 .block-wrapper {
   display: grid;
