@@ -94,14 +94,24 @@
     margin: 16px auto 0;
   }
   .rate {
+    @media(max-width: 991px) {
+      align-self: center;
+    }
     .rate-wrapper {
       display: flex;
       align-items: center;
       gap: 4px;
       margin-bottom: 12px;
+      @media(max-width: 991px) {
+        margin-bottom: 6px;
+      }
       img {
         width: 24px;
         height: 24px;
+        @media(max-width: 991px) {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
     .rate-result {
@@ -111,22 +121,33 @@
         font-weight: 600;
         margin-bottom: 0;
         color: #151515;
+        @media(max-width: 991px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
         span {
           font-weight: 400;
           font-size: 16px;
           line-height: 25px;
           @media(max-width: 991px) {
             font-size: 12px;
+            line-height: 14px;
           }
         }
       }
     }
+  }
+  .line {
+    border: 1px solid #EBEBEB;
   }
   .reviews {
     .peoples {
       display: flex;
       align-items: center;
       margin-bottom: 18px;
+      @media(max-width: 991px) {
+        margin-bottom: 13px;
+      }
       .people-item {
         &:not(:first-child) {
           margin-left: -6px;
@@ -137,12 +158,19 @@
           border-radius: 100%;
         }
       }
+      @media(max-width: 767px) {
+        justify-content: center;
+      }
     }
     span {
       font-size: 16px;
       line-height: 25px;
-      font-weight: 700 ;
+      font-weight: 700;
       color: #00254A;
+      @media(max-width: 767px) {
+        font-size: 12px;
+        line-height: 14px;
+      }
     }
   }
 }

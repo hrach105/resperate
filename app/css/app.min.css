@@ -432,6 +432,17 @@ body.overflow-hidden {
   overflow: hidden;
 }
 
+.play-btn {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 991px) {
+  .play-btn {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 header .top-header {
   background: -webkit-gradient(linear, left top, left bottom, from(#003467), to(#00254A));
   background: -o-linear-gradient(top, #003467 0%, #00254A 100%);
@@ -744,6 +755,12 @@ header .mobile-menu.show a.shop-now {
     margin: 16px auto 0;
   }
 }
+@media (max-width: 991px) {
+  .rating-block .rate {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
 .rating-block .rate .rate-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,9 +771,20 @@ header .mobile-menu.show a.shop-now {
   gap: 4px;
   margin-bottom: 12px;
 }
+@media (max-width: 991px) {
+  .rating-block .rate .rate-wrapper {
+    margin-bottom: 6px;
+  }
+}
 .rating-block .rate .rate-wrapper img {
   width: 24px;
   height: 24px;
+}
+@media (max-width: 991px) {
+  .rating-block .rate .rate-wrapper img {
+    width: 20px;
+    height: 20px;
+  }
 }
 .rating-block .rate .rate-result p {
   font-size: 24px;
@@ -764,6 +792,12 @@ header .mobile-menu.show a.shop-now {
   font-weight: 600;
   margin-bottom: 0;
   color: #151515;
+}
+@media (max-width: 991px) {
+  .rating-block .rate .rate-result p {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 .rating-block .rate .rate-result p span {
   font-weight: 400;
@@ -773,7 +807,11 @@ header .mobile-menu.show a.shop-now {
 @media (max-width: 991px) {
   .rating-block .rate .rate-result p span {
     font-size: 12px;
+    line-height: 14px;
   }
+}
+.rating-block .line {
+  border: 1px solid #EBEBEB;
 }
 .rating-block .reviews .peoples {
   display: -webkit-box;
@@ -784,6 +822,11 @@ header .mobile-menu.show a.shop-now {
           align-items: center;
   margin-bottom: 18px;
 }
+@media (max-width: 991px) {
+  .rating-block .reviews .peoples {
+    margin-bottom: 13px;
+  }
+}
 .rating-block .reviews .peoples .people-item:not(:first-child) {
   margin-left: -6px;
 }
@@ -792,11 +835,24 @@ header .mobile-menu.show a.shop-now {
   height: 24px;
   border-radius: 100%;
 }
+@media (max-width: 767px) {
+  .rating-block .reviews .peoples {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .rating-block .reviews span {
   font-size: 16px;
   line-height: 25px;
   font-weight: 700;
   color: #00254A;
+}
+@media (max-width: 767px) {
+  .rating-block .reviews span {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .information-block {
@@ -2761,6 +2817,283 @@ footer .footer-bottom .socials a {
     font-size: 16px;
     line-height: 25px;
   }
+}
+
+.how-works-banner {
+  min-height: 600px;
+  height: 100%;
+  font-size: 0;
+}
+.how-works-banner img {
+  width: 100%;
+  height: 600px;
+}
+
+.resperate-reviews {
+  background: #F1F1F1;
+  padding-top: 80px;
+}
+.resperate-reviews .page-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.resperate-reviews .rating-block {
+  max-width: 690px;
+  width: 100%;
+  background: #F7F7F7;
+  padding: 16px;
+  border-radius: 16px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .resperate-reviews .rating-block {
+    margin: 16px auto 0;
+  }
+}
+.resperate-reviews .rating-block .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+.resperate-reviews .rating-block .rate .rate-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  margin-bottom: 0;
+}
+.resperate-reviews .rating-block .rate .rate-wrapper img {
+  width: 24px;
+  height: 24px;
+}
+.resperate-reviews .rating-block .rate .rate-result p {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #151515;
+}
+.resperate-reviews .rating-block .rate .rate-result p span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+@media (max-width: 991px) {
+  .resperate-reviews .rating-block .rate .rate-result p span {
+    font-size: 12px;
+  }
+}
+.resperate-reviews .rating-block .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+.resperate-reviews .rating-block .reviews .peoples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+.resperate-reviews .rating-block .reviews .peoples .people-item:not(:first-child) {
+  margin-left: -6px;
+}
+.resperate-reviews .rating-block .reviews .peoples .people-item img {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+.resperate-reviews .rating-block .reviews span {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #00254A;
+}
+.resperate-reviews .doctor-recommended {
+  background: #002143;
+  padding: 80px 109px 80px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 52px;
+  margin: 60px auto 80px;
+  border-radius: 40px;
+  max-width: 1472px;
+  width: 100%;
+}
+.resperate-reviews .doctor-recommended .description {
+  max-width: 600px;
+  width: 100%;
+}
+.resperate-reviews .doctor-recommended .description span {
+  font-size: 24px;
+  line-height: 31px;
+  color: #CEDFEF;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+}
+.resperate-reviews .doctor-recommended .description h2 {
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 52px;
+}
+.resperate-reviews .doctor-recommended .description p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #CEDFEF;
+  font-weight: 400;
+}
+.resperate-reviews .doctor-recommended .description .personal-info {
+  margin-top: 46px;
+}
+.resperate-reviews .doctor-recommended .description .personal-info p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: white;
+}
+.resperate-reviews .doctor-recommended .description .personal-info span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+}
+.resperate-reviews .doctor-recommended .image {
+  max-width: 560px;
+  height: 450px;
+}
+.resperate-reviews .doctor-recommended .image .video-image img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.resperate-reviews .doctor-recommended .image .video-image .play-btn {
+  width: 100px;
+  height: 100px;
+}
+
+.physician-reviews {
+  background: white;
+  border-radius: 40px;
+  padding: 80px 89px;
+  margin-bottom: 80px;
+}
+.physician-reviews h2 {
+  margin-bottom: 30px;
+}
+.physician-reviews .physician-reviews-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-item {
+  width: 100%;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-item .video-image {
+  margin-bottom: 20px;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-item .video-image img {
+  height: 332px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-item .video-image .play-btn {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 991px) {
+  .physician-reviews .physician-reviews-wrapper .physician-reviews-item .video-image .play-btn {
+    width: 80px;
+    height: 80px;
+  }
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-item .physician-reviews-item-desc h3 {
+  font-size: 20px;
+  font-weight: 32;
+  color: #151515;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-item .physician-reviews-item-desc p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #535353;
+  display: -webkit-box;
+  overflow: hidden;
+  max-height: 174px;
+  min-height: 174px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-item .physician-reviews-item-desc .personal-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  gap: 6px;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-item .physician-reviews-item-desc .personal-information .name {
+  font-size: 16px;
+  line-height: 25px;
+  color: #151515;
+  font-weight: 500;
+  margin-top: 0;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-item .physician-reviews-item-desc .personal-information .profession {
+  font-size: 14px;
+  line-height: 22px;
+  color: #535353;
+}
+
+.bg-white {
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  position: relative;
+  min-height: 472px;
+}
+.bg-white .verified-reviews {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -49%;
 }
 .block-wrapper {
   display: grid;

@@ -1,0 +1,88 @@
+.physician-reviews {
+  background: white;
+  border-radius: 40px;
+  padding: 80px 89px;
+  margin-bottom: 80px;
+  h2 {
+    margin-bottom: 30px;
+  }
+  .physician-reviews-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 30px;
+    .physician-reviews-item {
+      width: 100%;
+      .video-image {
+        margin-bottom: 20px;
+        img {
+          height: 332px;
+          width: 100%;
+          object-fit: cover;
+        }
+        .play-btn {
+          width: 100px;
+          height: 100px;
+          @media(max-width: 991px) {
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+      .physician-reviews-item-desc {
+        h3 {
+          font-size: 20px;
+          font-weight: 32;
+          color: #151515;
+          font-weight: 500;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 28px;
+          color: #535353;
+          display: -webkit-box;
+          overflow: hidden;
+          max-height: 174px;
+          min-height: 174px;
+          text-overflow: ellipsis;
+          transition: all 0.2s;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+        }
+        .personal-information {
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+          gap: 6px;
+          .name {
+            font-size: 16px;
+            line-height: 25px;
+            color: #151515;
+            font-weight: 500;
+            margin-top: 0;
+          }
+          .profession {
+            font-size: 14px;
+            line-height: 22px;
+            color: #535353;
+          }
+        }
+      }
+    }
+  }
+
+}
+.bg-white {
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  position: relative;
+  min-height: 472px;
+  .verified-reviews {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -49%;
+  }
+}
