@@ -2868,12 +2868,212 @@ footer .footer-bottom .socials a {
 
 .how-works-banner {
   min-height: 600px;
-  height: 100%;
+  font-size: 0;
+  background: url("../images/how-work.png") no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 991px) {
+  .how-works-banner {
+    min-height: 420px;
+    text-align: center;
+  }
+}
+.how-works-banner .banner-content {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+@media (max-width: 1200px) {
+  .how-works-banner .banner-content {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .how-works-banner .banner-content {
+    padding: 0 20px;
+  }
+}
+.how-works-banner .banner-content .banner-description {
+  max-width: 570px;
+  width: 100%;
+}
+.how-works-banner .banner-content .banner-description h1 {
+  color: white;
+  margin-bottom: 24px;
+}
+.how-works-banner .banner-content .banner-description p {
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+}
+@media (max-width: 991px) {
+  .how-works-banner .banner-content .banner-description p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+.how-resperate-works {
+  padding-top: 80px;
+  background: #F1F1F1;
+}
+@media (max-width: 991px) {
+  .how-resperate-works {
+    padding-top: 40px;
+  }
+}
+.how-resperate-works .header {
+  max-width: 569px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .how-resperate-works .header {
+    padding-bottom: 0;
+  }
+}
+.how-resperate-works .header h2 {
+  margin-bottom: 20px;
+}
+.how-resperate-works .header p {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #535353;
+}
+.how-resperate-works .tutorials-wrapper .tutor-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 84px;
+  padding: 60px 0;
+}
+@media (max-width: 991px) {
+  .how-resperate-works .tutorials-wrapper .tutor-item {
+    gap: 30px;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .how-resperate-works .tutorials-wrapper .tutor-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+.how-resperate-works .tutorials-wrapper .tutor-item .tutor-image {
+  max-width: 560px;
+  width: 100%;
   font-size: 0;
 }
-.how-works-banner img {
+.how-resperate-works .tutorials-wrapper .tutor-item .tutor-image img {
   width: 100%;
-  height: 600px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+@media (max-width: 991px) {
+  .how-resperate-works .tutorials-wrapper .tutor-item .tutor-image img {
+    height: 335px;
+  }
+}
+.how-resperate-works .tutorials-wrapper .tutor-item .tutor-desc {
+  max-width: 546px;
+}
+@media (max-width: 767px) {
+  .how-resperate-works .tutorials-wrapper .tutor-item .tutor-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+  }
+}
+.how-resperate-works .tutorials-wrapper .tutor-item .tutor-desc span {
+  display: block;
+  width: 78px;
+  height: 78px;
+  border-radius: 100px;
+  background: white;
+  font-size: 24px;
+  color: #00468C;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  border: 1px solid #F1F1F1;
+}
+@media (max-width: 991px) {
+  .how-resperate-works .tutorials-wrapper .tutor-item .tutor-desc span {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+.how-resperate-works .tutorials-wrapper .tutor-item .tutor-desc p {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 400;
+  color: #151515;
+}
+@media (max-width: 991px) {
+  .how-resperate-works .tutorials-wrapper .tutor-item .tutor-desc p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+.how-resperate-works .tutorials-wrapper .tutor-item:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  background: white;
+  padding: 60px 0;
+}
+@media (max-width: 991px) {
+  .how-resperate-works .tutorials-wrapper .tutor-item:nth-child(even) {
+    gap: 30px;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .how-resperate-works .tutorials-wrapper .tutor-item:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+.how-resperate-works .tutorials-wrapper .tutor-item:nth-child(even) .tutor-desc span {
+  background: #F5FAFF;
+  border: 1px solid #CEDFEF;
+}
+.how-resperate-works .faq {
+  padding-top: 0;
 }
 
 .resperate-reviews {

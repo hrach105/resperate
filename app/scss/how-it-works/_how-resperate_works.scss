@@ -1,0 +1,115 @@
+.how-resperate-works {
+  padding-top: 80px;
+  background: #F1F1F1;
+    @media(max-width: 991px) {
+      padding-top: 40px;
+    }
+    .header {
+    max-width: 569px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+      @media(max-width: 991px) {
+        padding-bottom: 0;
+      }
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 28px;
+      color: #535353;
+    }
+  }
+  .tutorials-wrapper {
+    .tutor-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 84px;
+      padding:60px 0;
+      @media(max-width: 991px) {
+        gap: 30px;
+        padding: 40px 20px;
+      }
+      @media(max-width: 767px){
+          flex-direction: column-reverse;
+      }
+      .tutor-image {
+        max-width: 560px;
+        width: 100%;
+        font-size: 0;
+        img {
+          width: 100%;
+          height: 450px;
+          object-fit: cover;
+          border-radius: 20px;
+          @media(max-width: 991px) {
+            height: 335px;
+          }
+        }
+      }
+      .tutor-desc {
+        max-width: 546px;
+        @media(max-width: 767px){
+          display: flex;
+          gap: 16px;
+        }
+        span {
+          display: block;
+          width: 78px;
+          height: 78px;
+          border-radius: 100px;
+          background: white;
+          font-size: 24px;
+          color: #00468C;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 30px;
+          border: 1px solid #F1F1F1;
+          @media(max-width: 991px) {
+            min-width: 40px;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            margin-bottom: 0;
+          }
+        }
+        p {
+          font-size: 24px;
+          line-height: 38px;
+          font-weight: 400;
+          color: #151515;
+          @media(max-width: 991px) {
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        background: white;
+        padding: 60px 0;
+        @media(max-width: 991px) {
+          gap: 30px;
+          padding: 40px 20px;
+        }
+        @media(max-width: 767px){
+          flex-direction: column-reverse;
+        }
+        .tutor-desc span {
+          background: #F5FAFF;
+          border: 1px solid #CEDFEF;
+        }
+      }
+
+    }
+  }
+  .faq {
+    padding-top: 0;
+  }
+}
