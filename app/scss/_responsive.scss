@@ -42,3 +42,17 @@ body{
     height: 80px;
   }
 }
+input {
+  height: 56px;
+  width: 100%;
+  padding-left: 24px;
+  color: #151515;
+  border: 1px solid #CECECE;
+  background: white;
+  border-radius: 30px;
+  font-weight: 500;
+  &::placeholder {
+    color: #818181;
+    font-weight: 400;
+  }
+}

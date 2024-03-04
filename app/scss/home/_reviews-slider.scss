@@ -9,8 +9,8 @@
   .reviews-wrapper {
     display: flex;
     gap: 30px;
-    max-width: calc(100% - 171px);
     margin-left: auto;
+    max-width: calc(100% - 117px);
     @media(max-width: 1366px) {
       max-width: calc(100% - 80px);
     }
@@ -65,7 +65,9 @@
       }
     }
     .reviews-slider {
-      max-width: 76%;
+      max-width: 70%;
+      width: 100%;
+      margin-left: auto;
       margin-bottom: 116px;
       position: relative;
       @media(max-width: 1366px) {
@@ -190,7 +192,10 @@
         &.slick-next {
           left: -23%;
           @media(min-width: 1520px) {
-            left: -22%;
+            left: -37%;
+          }
+          @media(max-width: 1440px) {
+            left: -33%;
           }
           @media(max-width: 1366px) {
             left: -38%;
@@ -205,7 +210,10 @@
         &.slick-prev {
           left: -30%;
           @media(min-width: 1520px) {
-            left: -27%;
+            left: -42%;
+          }
+          @media(max-width: 1440px) {
+            left: -41%;
           }
           @media(max-width: 1366px) {
             left: -46%;
@@ -234,7 +242,10 @@
         left: -30%;
         top: 67%;
         @media(min-width: 1520px) {
-          left: -27%;
+          left: -42%;
+        }
+        @media(max-width: 1440px) {
+          left: -41%;
         }
         @media(max-width: 1366px) {
          left: -46%;
