@@ -73,7 +73,9 @@ header {
       @media(max-width: 991px) {
         display: none;
       }
+
     }
+
     .phone-number {
       display: flex;
       align-items: center;
@@ -86,6 +88,19 @@ header {
         display: none;
       }
     }
+    .shop-link {
+      height: 48px;
+      display: flex;
+      align-items: center;
+      border: 2px solid #FF7E00;
+      border-radius: 60px;
+      color:  #FF7E00;
+      font-weight: 700;
+      line-height: 16px;
+      padding: 0 41px;
+      text-transform: capitalize;
+    }
+
     .burger-menu {
       display: none;
       @media(max-width: 991px) {

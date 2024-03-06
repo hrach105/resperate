@@ -433,3 +433,10 @@ ul {
 	color: white;
 	cursor: pointer;
 }
+li {
+	&.current-menu-item {
+		a {
+			color: #D36800 !important;
+		}
+	}
+}

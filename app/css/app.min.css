@@ -396,6 +396,10 @@ ul li a {
   cursor: pointer;
 }
 
+li.current-menu-item a {
+  color: #D36800 !important;
+}
+
 .page-title {
   font-size: 60px;
   line-height: 66px;
@@ -591,6 +595,22 @@ header .bottom-header .phone-number {
   header .bottom-header .phone-number {
     display: none;
   }
+}
+header .bottom-header .shop-link {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #FF7E00;
+  border-radius: 60px;
+  color: #FF7E00;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 0 41px;
+  text-transform: capitalize;
 }
 header .bottom-header .burger-menu {
   display: none;
