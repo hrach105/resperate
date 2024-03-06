@@ -1,0 +1,66 @@
+.clinical-trials {
+  padding: 80px 20px;
+  width: 100%;
+  background: #F1F1F1;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px;
+    background: #002143;
+    max-width: 1472px;
+    margin: auto;
+    .description {
+      max-width: 851px;
+      width: 100%;
+      display: flex;
+     .inner {
+       max-width: 600px;
+       width: 100%;
+       margin: auto;
+       h3 {
+         font-size: 32px;
+         line-height: 41px;
+         color: #FFFFFF;
+         font-weight: 400;
+         font-family: "Red Hat Display", sans-serif;
+         margin: 0;
+       }
+       p {
+         font-size: 18px;
+         line-height: 28px;
+         color: #CEDFEF;
+         margin: 20px 0 30px;
+       }
+       a {
+         font-size: 16px;
+         line-height: 25px;
+         color: white;
+         border-bottom: 1px white;
+         gap: 18px;
+         display: inline-flex;
+         align-items: center;
+         border-bottom: 1px solid;
+         padding-bottom: 2px;
+       }
+       .note {
+         margin-top: 85px;
+         span {
+           font-size: 20px;
+           color: white;
+         }
+       }
+     }
+    }
+    .image {
+      max-width: 620px;
+      width: 100%;
+      font-size: 0;
+      img {
+        height: 610px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0 40px 40px 0;
+      }
+    }
+  }
+}

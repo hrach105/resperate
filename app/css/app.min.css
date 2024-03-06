@@ -367,6 +367,11 @@ ul li a {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 991px) {
+  .main-container {
+    padding: 0 20px;
+  }
+}
 
 .main-btn {
   background: #FF7E00;
@@ -3693,6 +3698,501 @@ footer .footer-bottom .socials a {
     font-size: 16px;
     line-height: 25px;
   }
+}
+
+.order-confirmation {
+  background: #F1F1F1;
+  padding: 80px 0;
+}
+@media (max-width: 991px) {
+  .order-confirmation {
+    padding: 40px 0;
+  }
+}
+.order-confirmation .header {
+  text-align: center;
+}
+.order-confirmation .header h1 {
+  margin: 0;
+  margin-bottom: 24px;
+}
+@media (max-width: 991px) {
+  .order-confirmation .header h1 {
+    margin-bottom: 12px;
+  }
+}
+.order-confirmation .header p {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+@media (max-width: 991px) {
+  .order-confirmation .header p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+.order-confirmation .header a {
+  font-size: 20px;
+  line-height: 20px;
+  color: #002143;
+  font-weight: 700;
+  border-bottom: 1px solid;
+  padding-bottom: 3px;
+}
+@media (max-width: 991px) {
+  .order-confirmation .header a {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+.order-confirmation .wrapper {
+  margin-top: 66px;
+  background: white;
+  padding: 40px 91px;
+  border-radius: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 31px;
+}
+@media (max-width: 991px) {
+  .order-confirmation .wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 40px 20px;
+    margin-top: 22px;
+  }
+}
+@media (max-width: 991px) {
+  .order-confirmation .wrapper .description {
+    text-align: center;
+  }
+}
+.order-confirmation .wrapper .description h2 {
+  font-size: 24px;
+  line-height: 31px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  color: #151515;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .order-confirmation .wrapper .description h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+.order-confirmation .wrapper .description h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #151515;
+  line-height: 52px;
+  margin: 40px 0 20px;
+}
+@media (max-width: 991px) {
+  .order-confirmation .wrapper .description h3 {
+    margin: 16px auto 24px;
+    font-size: 24px;
+    line-height: 31px;
+    max-width: 250px;
+    width: 100%;
+  }
+}
+.order-confirmation .wrapper .description p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #535353;
+}
+@media (max-width: 991px) {
+  .order-confirmation .wrapper .description p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.order-confirmation .wrapper .description button {
+  margin: 30px 0 40px;
+}
+@media (max-width: 991px) {
+  .order-confirmation .wrapper .description button {
+    margin: 20px auto 20px;
+    padding: 0 46px;
+  }
+}
+.order-confirmation .wrapper .description span {
+  font-size: 18px;
+  line-height: 28px;
+  color: #535353;
+}
+@media (max-width: 991px) {
+  .order-confirmation .wrapper .description span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.order-confirmation .wrapper .video-image img {
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+  -webkit-box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+  height: 450px;
+}
+@media (max-width: 991px) {
+  .order-confirmation .wrapper .video-image img {
+    height: 232px;
+  }
+}
+.order-confirmation .wrapper .video-image .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 991px) {
+  .order-confirmation .wrapper .video-image .play-btn {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.clinical-proof {
+  background: #F1F1F1;
+}
+.clinical-proof .banner {
+  height: 792px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#003467), to(#00254A));
+  background: -o-linear-gradient(top, #003467 0%, #00254A 100%);
+  background: linear-gradient(180deg, #003467 0%, #00254A 100%);
+}
+.clinical-proof .banner .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.clinical-proof .banner .wrapper .description h1 {
+  color: white;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+.clinical-proof .banner .wrapper .description p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #CEDFEF;
+  margin: 0;
+}
+.clinical-proof .banner .wrapper .description .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+.clinical-proof .banner .wrapper .description .btns button:last-child {
+  border: none;
+  border-radius: 30px;
+  background: #4D6680;
+  height: 56px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  padding: 0 24px;
+}
+.clinical-proof .banner .wrapper .image {
+  font-size: 0;
+}
+.clinical-proof .banner .wrapper .image img {
+  height: 480px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+.clinical-proof .banner .information-block {
+  background: transparent;
+  padding-top: 60px;
+}
+.clinical-proof .banner .information-block .information-item {
+  background: rgba(255, 255, 255, 0.1);
+}
+.clinical-proof .banner .information-block .information-item .icon {
+  background: rgba(255, 255, 255, 0.2);
+}
+.clinical-proof .banner .information-block .information-item h4 {
+  color: white;
+}
+.clinical-proof .banner .information-block .information-item span {
+  color: white;
+}
+
+.hypertension-treatment {
+  padding: 80px 0;
+  background: white;
+}
+@media (max-width: 991px) {
+  .hypertension-treatment {
+    padding: 470px 0;
+  }
+}
+.hypertension-treatment .section-title {
+  margin-bottom: 30px;
+  max-width: 570px;
+  width: 100%;
+}
+.hypertension-treatment .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 20px;
+}
+.hypertension-treatment .wrapper .item {
+  padding-bottom: 26px;
+  border-bottom: 1px solid #EBEBEB;
+}
+.hypertension-treatment .wrapper .item:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+.hypertension-treatment .wrapper .item .icons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.hypertension-treatment .wrapper .item .icons-wrapper .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hypertension-treatment .wrapper .item .icons-wrapper .icon img {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+}
+.hypertension-treatment .wrapper .item .text span {
+  color: #151515;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+}
+.hypertension-treatment .wrapper .item p {
+  color: #535353;
+  font-size: 16px;
+  line-height: 25px;
+  max-height: 104px;
+}
+
+.clinical-trials {
+  padding: 80px 20px;
+  width: 100%;
+  background: #F1F1F1;
+}
+.clinical-trials .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 40px;
+  background: #002143;
+  max-width: 1472px;
+  margin: auto;
+}
+.clinical-trials .wrapper .description {
+  max-width: 851px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.clinical-trials .wrapper .description .inner {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
+.clinical-trials .wrapper .description .inner h3 {
+  font-size: 32px;
+  line-height: 41px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+}
+.clinical-trials .wrapper .description .inner p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #CEDFEF;
+  margin: 20px 0 30px;
+}
+.clinical-trials .wrapper .description .inner a {
+  font-size: 16px;
+  line-height: 25px;
+  color: white;
+  border-bottom: 1px white;
+  gap: 18px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+}
+.clinical-trials .wrapper .description .inner .note {
+  margin-top: 85px;
+}
+.clinical-trials .wrapper .description .inner .note span {
+  font-size: 20px;
+  color: white;
+}
+.clinical-trials .wrapper .image {
+  max-width: 620px;
+  width: 100%;
+  font-size: 0;
+}
+.clinical-trials .wrapper .image img {
+  height: 610px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 40px 40px 0;
+}
+
+.health-information {
+  background: #F1F1F1;
+  padding: 13px 0 93px;
+}
+.health-information .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  padding: 80px 0;
+}
+.health-information .wrapper:nth-child(even) {
+  background: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 0 20px;
+  border-radius: 40px;
+}
+.health-information .wrapper .image {
+  font-size: 0;
+  max-width: 550px;
+  width: 100%;
+}
+.health-information .wrapper .image img {
+  height: 514px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+.health-information .wrapper .description {
+  max-width: 567px;
+  width: 100%;
+}
+.health-information .wrapper .description h3 {
+  font-size: 32px;
+  line-height: 41px;
+  color: #151515;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+}
+.health-information .wrapper .description p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #535353;
+  margin-bottom: 12px;
+}
+
+.references {
+  background: white;
+  border-radius: 40px;
+  padding: 80px 91px;
+}
+.references h2 {
+  margin-bottom: 40px;
+}
+.references .links-group .links-item {
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.references .links-group .links-item h4 {
+  font-size: 24px;
+  line-height: 31px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.references .links-group .links-item ol {
+  padding-left: 14px;
+  margin: 0;
+}
+.references .links-group .links-item ol li {
+  font-size: 14px;
+  color: #0D5AA6;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
 }
 .block-wrapper {
   display: grid;

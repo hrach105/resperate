@@ -1,0 +1,75 @@
+.clinical-proof {
+  background: #F1F1F1;
+  .banner {
+    height: 792px;
+    width: 100%;
+    background:  linear-gradient(180deg, #003467 0%, #00254A 100%);
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      align-items: center;
+      gap: 30px;
+      .description {
+        h1 {
+          color: white;
+          margin-bottom: 24px;
+          margin-top: 0;
+        }
+        p {
+          font-size: 18px;
+          line-height: 28px;
+          color: #CEDFEF;
+          margin: 0;
+        }
+        .btns {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin-top: 24px;
+          button {
+            &:last-child {
+              border: none;
+              border-radius: 30px;
+              background: #4D6680;
+              height: 56px;
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              font-size: 16px;
+              line-height: 16px;
+              font-weight: 700;
+              padding: 0 24px;
+            }
+          }
+        }
+      }
+      .image {
+        font-size: 0;
+        img {
+          height: 480px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 40px;
+        }
+      }
+    }
+    .information-block {
+      background: transparent;
+      padding-top: 60px;
+      .information-item {
+        background: rgb(255 255 255 / 10%);
+        .icon {
+          background: rgb(255 255 255 / 20%);
+        }
+        h4 {
+          color: white;
+        }
+        span {
+          color: white;
+        }
+      }
+    }
+  }
+}

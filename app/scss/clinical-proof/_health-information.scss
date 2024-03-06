@@ -1,0 +1,47 @@
+.health-information {
+  background: #F1F1F1;
+  padding: 13px 0 93px;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 0;
+    &:nth-child(even) {
+      background: white;
+      flex-direction: row-reverse;
+      margin:  0 20px;
+      border-radius: 40px;
+    }
+
+    .image {
+      font-size: 0;
+      max-width: 550px;
+      width: 100%;
+      img {
+        height: 514px;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+    .description {
+      max-width: 567px;
+      width: 100%;
+      h3 {
+        font-size: 32px;
+        line-height: 41px;
+        color: #151515;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 400;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        color: #535353;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
