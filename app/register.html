@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>register</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.min.css">
@@ -83,7 +84,7 @@
    <div class="container">
        <div class="auth-headers">
            <h1>LowerPressure<sup>TM</sup> Program Registration</h1>
-           <p>A personalized 60-day program to get the most out of RESPeRATE. This email-based program is FREE for new RESPeRATE Owners. For a limited time you’ll also receive our 12 Weeks Blood Pressure eCourse for Free ($49.95 value). You may unsubscribe at any time.</p>
+           <p  data-aos="fade-up">A personalized 60-day program to get the most out of RESPeRATE. This email-based program is FREE for new RESPeRATE Owners. For a limited time you’ll also receive our 12 Weeks Blood Pressure eCourse for Free ($49.95 value). You may unsubscribe at any time.</p>
        </div>
        <div class="form-wrapper">
            <form id="registrationForm" action="">
@@ -133,7 +134,7 @@
                </div>
                <input type="submit" value="Register now">
            </form>
-           <div class="form-image">
+           <div class="form-image" data-aos="fade-up">
                <img src="./images/form-image.png" alt="">
            </div>
        </div>
@@ -230,10 +231,13 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
     $('#closePopup').click(function (){
         $(this).parents('.reg-popup-overlay').css('display',"none")
     })
+    AOS.init();
 </script>
 </body>
 </html>

@@ -8,6 +8,7 @@
     <title>home</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.min.css">
@@ -84,7 +85,7 @@
     <div class="banner">
         <div class="banner-wrapper">
            <div class="banner-description">
-               <h1>Lower Your Blood  Pressure Naturally</h1>
+               <h1 class="animated-text page-title">Lower Your Blood  Pressure Naturally</h1>
                <p>RESPeRATE is the only FDA-cleared, non-drug medical device clinically proven to lower blood pressure.</p>
                <div class="banner-image for-mobile">
                    <img src="./images/img_resperate_device.png" alt="">
@@ -182,7 +183,7 @@
 
     <div class="clinical-proof-banner">
         <div class="clinical-proof-banner-wrapper">
-            <div class="clinical-proof-banner-wrapper-description">
+            <div class="clinical-proof-banner-wrapper-description" data-aos="fade-up">
                 <h3>Clinically Proven. Doctor Recommended.</h3>
                 <p>RESPeRATE’s safety & efficacy was demonstrated in 50+ published clinical trials.</p>
                 <p>For years, physicians have prescribed RESPeRATE to lower blood pressure.  Now, it’s cleared by FDA for purchase without a prescription (OTC).</p>
@@ -484,7 +485,7 @@
 
     <div class="recomendation-block">
         <div class="recomendation-block-wrapper">
-            <div class="recomendation-block-wrapper-content">
+            <div class="recomendation-block-wrapper-content"  data-aos="fade-up">
                 <h2 class="section-title">Get our FREE 10 Tips to Lower Blood Pressure Naturally</h2>
                 <p>You’ll also receive our weekly newsletter.</p>
                 <form action="">
@@ -580,6 +581,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $('.simple-effective-slider').slick({
@@ -694,6 +696,28 @@
             $('.mobile-menu').removeClass('show')
             $('.bottom-header').removeClass('border')
         })
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var animatedText = document.querySelector(".animated-text");
+            var textArray = animatedText.textContent.split("");
+            animatedText.textContent = "";
+            function animateText(index) {
+                animatedText.style.opacity = 1;
+                animatedText.style.fontSize = "60px";
+                animatedText.textContent += textArray[index];
+                index++;
+                if (index < textArray.length) {
+                    setTimeout(function() {
+                        animateText(index);
+                    }, 100);
+                }
+            }
+            setTimeout(function() {
+                animateText(0);
+            }, 500);
+        });
     </script>
 </body>
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>clinical proof</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.min.css">
@@ -83,7 +84,7 @@
         <div class="banner">
            <div class="container">
                <div class="wrapper">
-                   <div class="description">
+                   <div class="description"  data-aos="fade-right">
                        <h1 class="page-title">All-day, Sustained, Blood Pressure Reductions in 3-4 Weeks</h1>
                        <p>RESPeRATE’s safety & efficacy was demonstrated in 50+ published clinical trials</p>
                        <div class="btns">
@@ -102,7 +103,7 @@
                            </button>
                        </div>
                    </div>
-                   <div class="image">
+                   <div class="image"  data-aos="fade-left">
                        <img src="./images/chart1.png" alt="">
                    </div>
                </div>
@@ -461,5 +462,10 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
