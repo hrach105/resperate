@@ -1,32 +1,64 @@
 .clinical-proof {
   background: #F1F1F1;
+  @media(max-width: 991px) {
+    width: 100%;
+  }
   .banner {
-    height: 792px;
+    min-height: 792px;
+    padding-bottom: 0;
     width: 100%;
     background:  linear-gradient(180deg, #003467 0%, #00254A 100%);
+    @media(max-width: 991px) {
+      height: auto;
+      margin: auto;
+      padding-bottom: 40px;
+    }
     .wrapper {
       display: grid;
       grid-template-columns: repeat(2,minmax(0,1fr));
       align-items: center;
       gap: 30px;
+      @media(max-width: 1200px) {
+        padding: 0 20px;
+        gap: 12px;
+      }
+      @media(max-width: 991px) {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        padding: 0 20px;
+        width: 100%;
+        margin: auto;
+
+      }
       .description {
         h1 {
           color: white;
           margin-bottom: 24px;
           margin-top: 0;
+
         }
         p {
           font-size: 18px;
           line-height: 28px;
           color: #CEDFEF;
           margin: 0;
+          @media(max-width: 991px) {
+            font-size: 16px;
+            line-height: 25px;
+          }
         }
         .btns {
           display: flex;
           align-items: center;
           gap: 16px;
           margin-top: 24px;
+          @media(max-width: 991px) {
+            flex-direction: column;
+            gap: 8px;
+          }
           button {
+            @media(max-width: 991px) {
+              width: 100%;
+            }
             &:last-child {
               border: none;
               border-radius: 30px;
@@ -47,17 +79,34 @@
       }
       .image {
         font-size: 0;
+        @media(max-width: 991px) {
+          margin-top: 28px;
+        }
         img {
           height: 480px;
           width: 100%;
           object-fit: cover;
           border-radius: 40px;
+          @media(max-width: 991px) {
+            height: 282px;
+          }
         }
       }
     }
     .information-block {
       background: transparent;
       padding-top: 60px;
+      margin-bottom: 0;
+      .information-block-wrapper {
+        max-width: 100%;
+        @media(max-width: 991px) {
+          padding: 0 20px;
+        }
+      }
+      @media(max-width: 991px) {
+        padding-top: 30px;
+        padding-bottom: 0;
+      }
       .information-item {
         background: rgb(255 255 255 / 10%);
         .icon {

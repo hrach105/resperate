@@ -2,6 +2,9 @@
   padding: 80px 20px;
   width: 100%;
   background: #F1F1F1;
+  @media(max-width: 991px) {
+    padding-bottom: 0;
+  }
   .wrapper {
     display: flex;
     justify-content: space-between;
@@ -9,10 +12,16 @@
     background: #002143;
     max-width: 1472px;
     margin: auto;
+    @media(max-width: 991px) {
+     flex-direction: column;
+    }
     .description {
       max-width: 851px;
       width: 100%;
       display: flex;
+      @media(max-width: 991px) {
+        padding: 40px 20px;
+      }
      .inner {
        max-width: 600px;
        width: 100%;
@@ -24,6 +33,10 @@
          font-weight: 400;
          font-family: "Red Hat Display", sans-serif;
          margin: 0;
+         @media(max-width: 991px) {
+           font-size: 24px;
+           line-height: 31px;
+         }
        }
        p {
          font-size: 18px;
@@ -44,6 +57,10 @@
        }
        .note {
          margin-top: 85px;
+         @media(max-width: 991px) {
+           margin-top: 30px;
+           margin-bottom: 0;
+         }
          span {
            font-size: 20px;
            color: white;
@@ -60,6 +77,10 @@
         width: 100%;
         object-fit: cover;
         border-radius: 0 40px 40px 0;
+        @media(max-width: 991px) {
+          height: 372px;
+          border-radius: 0 0 20px 20px;
+        }
       }
     }
   }

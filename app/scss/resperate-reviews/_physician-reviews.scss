@@ -3,32 +3,89 @@
   border-radius: 40px;
   padding: 80px 89px;
   margin-bottom: 80px;
+
+  @media(max-width: 991px) {
+    padding: 40px 20px 140px;
+  }
+  @media(max-width: 767px) {
+   border-radius: 0;
+    margin-bottom: 0;
+  }
   h2 {
     margin-bottom: 30px;
+    @media(max-width: 991px) {
+      text-align: center;
+    }
   }
   .physician-reviews-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3,minmax(0,1fr));
-    gap: 30px;
+    .physician-reviews-slider {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 30px;
+      position: relative;
+      @media(max-width: 767px) {
+        display: block;
+      }
+      .slick-arrow {
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        background: #FF7E00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 53%;
+        bottom: -97px;
+        z-index: 1;
+        &.slick-prev {
+          left: 32%;
+        }
+        svg {
+          path {
+           stroke: white;
+          }
+        }
+        &.slick-disabled {
+          background: #E3E3E3;
+          svg {
+            path {
+              stroke: #BDBDBD;
+            }
+          }
+        }
+      }
+    }
+
     .physician-reviews-item {
       width: 100%;
+
+      @media(max-width: 767px) {
+        margin: 0 6px;
+      }
       .video-image {
         margin-bottom: 20px;
         img {
           height: 332px;
           width: 100%;
           object-fit: cover;
+          @media(max-width: 767px) {
+            height: 300px;
+          }
         }
         .play-btn {
-          width: 100px;
-          height: 100px;
+          width: 80px;
+          height: 80px;
           @media(max-width: 991px) {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
           }
         }
       }
       .physician-reviews-item-desc {
+        @media(max-width: 767px) {
+          text-align: center;
+        }
         h3 {
           font-size: 20px;
           font-weight: 32;

@@ -2,6 +2,9 @@
   padding: 75px 0;
   background: white;
   width: 100%;
+  @media(max-width: 767px) {
+    padding: 40px 20px;
+  }
   img {
     max-width: 975px;
     height: 924px;
@@ -9,6 +12,15 @@
     object-fit: cover;
     margin: 0 auto;
     display: block;
+    @media(max-width: 767px) {
+      display: none;
+    }
+  }
+  .mobile-image {
+    display: none;
+    @media(max-width: 767px) {
+      display: block;
+    }
   }
 }
 

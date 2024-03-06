@@ -1456,7 +1456,8 @@ header .mobile-menu.show a.shop-now {
   display: flex;
   gap: 30px;
   margin-left: auto;
-  max-width: calc(100% - 117px);
+  max-width: 1512px;
+  width: 100%;
 }
 @media (max-width: 1366px) {
   .reviews-slider-parent .reviews-wrapper {
@@ -1470,6 +1471,7 @@ header .mobile-menu.show a.shop-now {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: calc(100% - 20px);
+    padding-right: 20px;
   }
 }
 .reviews-slider-parent .reviews-wrapper .slider-description {
@@ -1610,6 +1612,12 @@ header .mobile-menu.show a.shop-now {
   left: 32px;
   bottom: 32px;
 }
+@media (max-width: 767px) {
+  .reviews-slider-parent .reviews-wrapper .reviews-slider .reviews-slider-item .slider-image .author {
+    left: 20px;
+    bottom: 11px;
+  }
+}
 .reviews-slider-parent .reviews-wrapper .reviews-slider .reviews-slider-item .slider-image .author p {
   font-size: 18px;
   line-height: 28px;
@@ -1617,6 +1625,12 @@ header .mobile-menu.show a.shop-now {
   color: white;
   margin-top: 0;
   margin-bottom: 4px;
+}
+@media (max-width: 767px) {
+  .reviews-slider-parent .reviews-wrapper .reviews-slider .reviews-slider-item .slider-image .author p {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 .reviews-slider-parent .reviews-wrapper .reviews-slider .reviews-slider-item .slider-image .author span {
   font-size: 14px;
@@ -1697,7 +1711,7 @@ header .mobile-menu.show a.shop-now {
 }
 @media (min-width: 1520px) {
   .reviews-slider-parent .reviews-wrapper .reviews-slider .slick-arrow.slick-next {
-    left: -37%;
+    left: -35%;
   }
 }
 @media (max-width: 1440px) {
@@ -1717,7 +1731,7 @@ header .mobile-menu.show a.shop-now {
 }
 @media (max-width: 767px) {
   .reviews-slider-parent .reviews-wrapper .reviews-slider .slick-arrow.slick-next {
-    left: 54%;
+    left: 50%;
   }
 }
 .reviews-slider-parent .reviews-wrapper .reviews-slider .slick-arrow.slick-prev {
@@ -3085,10 +3099,27 @@ footer .footer-bottom .socials a {
   background: #F1F1F1;
   padding-top: 80px;
 }
+@media (max-width: 991px) {
+  .resperate-reviews {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .resperate-reviews .main-container {
+    padding: 0px;
+  }
+}
 .resperate-reviews .page-title {
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .resperate-reviews .page-title {
+    max-width: 335px;
+    width: 100%;
+    margin: auto;
+  }
 }
 .resperate-reviews .rating-block {
   max-width: 690px;
@@ -3109,6 +3140,12 @@ footer .footer-bottom .socials a {
     margin: 16px auto 0;
   }
 }
+@media (max-width: 767px) {
+  .resperate-reviews .rating-block {
+    max-width: 335px;
+    padding: 12px;
+  }
+}
 .resperate-reviews .rating-block .rate {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3117,6 +3154,14 @@ footer .footer-bottom .socials a {
       -ms-flex-align: center;
           align-items: center;
   gap: 12px;
+}
+@media (max-width: 767px) {
+  .resperate-reviews .rating-block .rate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .resperate-reviews .rating-block .rate .rate-wrapper {
   display: -webkit-box;
@@ -3158,6 +3203,14 @@ footer .footer-bottom .socials a {
           align-items: center;
   gap: 16px;
 }
+@media (max-width: 767px) {
+  .resperate-reviews .rating-block .reviews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .resperate-reviews .rating-block .reviews .peoples {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3181,6 +3234,11 @@ footer .footer-bottom .socials a {
   font-weight: 700;
   color: #00254A;
 }
+@media (max-width: 767px) {
+  .resperate-reviews .rating-block .reviews span {
+    font-size: 12px;
+  }
+}
 .resperate-reviews .doctor-recommended {
   background: #002143;
   padding: 80px 109px 80px 150px;
@@ -3196,9 +3254,25 @@ footer .footer-bottom .socials a {
   max-width: 1472px;
   width: 100%;
 }
+@media (max-width: 991px) {
+  .resperate-reviews .doctor-recommended {
+    padding: 40px 20px;
+    gap: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .resperate-reviews .doctor-recommended .description {
   max-width: 600px;
   width: 100%;
+}
+@media (max-width: 991px) {
+  .resperate-reviews .doctor-recommended .description {
+    max-width: 100%;
+    text-align: center;
+  }
 }
 .resperate-reviews .doctor-recommended .description span {
   font-size: 24px;
@@ -3212,6 +3286,13 @@ footer .footer-bottom .socials a {
   margin-bottom: 20px;
   margin-top: 52px;
 }
+@media (max-width: 991px) {
+  .resperate-reviews .doctor-recommended .description h2 {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
 .resperate-reviews .doctor-recommended .description p {
   font-size: 18px;
   line-height: 28px;
@@ -3220,6 +3301,11 @@ footer .footer-bottom .socials a {
 }
 .resperate-reviews .doctor-recommended .description .personal-info {
   margin-top: 46px;
+}
+@media (max-width: 991px) {
+  .resperate-reviews .doctor-recommended .description .personal-info {
+    margin-top: 20px;
+  }
 }
 .resperate-reviews .doctor-recommended .description .personal-info p {
   font-weight: 700;
@@ -3237,15 +3323,37 @@ footer .footer-bottom .socials a {
   max-width: 560px;
   height: 450px;
 }
+@media (max-width: 991px) {
+  .resperate-reviews .doctor-recommended .image {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .resperate-reviews .doctor-recommended .image {
+    height: 200px;
+  }
+}
 .resperate-reviews .doctor-recommended .image .video-image img {
   width: 100%;
   height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 767px) {
+  .resperate-reviews .doctor-recommended .image .video-image img {
+    height: 200px;
+  }
+}
 .resperate-reviews .doctor-recommended .image .video-image .play-btn {
   width: 100px;
   height: 100px;
+}
+@media (max-width: 767px) {
+  .resperate-reviews .doctor-recommended .image .video-image .play-btn {
+    width: 60px;
+    height: 60px;
+  }
 }
 .resperate-reviews .amazon {
   margin-top: 0;
@@ -3257,16 +3365,74 @@ footer .footer-bottom .socials a {
   padding: 80px 89px;
   margin-bottom: 80px;
 }
+@media (max-width: 991px) {
+  .physician-reviews {
+    padding: 40px 20px 140px;
+  }
+}
+@media (max-width: 767px) {
+  .physician-reviews {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
 .physician-reviews h2 {
   margin-bottom: 30px;
 }
-.physician-reviews .physician-reviews-wrapper {
+@media (max-width: 991px) {
+  .physician-reviews h2 {
+    text-align: center;
+  }
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-slider {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 30px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .physician-reviews .physician-reviews-wrapper .physician-reviews-slider {
+    display: block;
+  }
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-slider .slick-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background: #FF7E00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 53%;
+  bottom: -97px;
+  z-index: 1;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-slider .slick-arrow.slick-prev {
+  left: 32%;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-slider .slick-arrow svg path {
+  stroke: white;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-slider .slick-arrow.slick-disabled {
+  background: #E3E3E3;
+}
+.physician-reviews .physician-reviews-wrapper .physician-reviews-slider .slick-arrow.slick-disabled svg path {
+  stroke: #BDBDBD;
 }
 .physician-reviews .physician-reviews-wrapper .physician-reviews-item {
   width: 100%;
+}
+@media (max-width: 767px) {
+  .physician-reviews .physician-reviews-wrapper .physician-reviews-item {
+    margin: 0 6px;
+  }
 }
 .physician-reviews .physician-reviews-wrapper .physician-reviews-item .video-image {
   margin-bottom: 20px;
@@ -3277,14 +3443,24 @@ footer .footer-bottom .socials a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 767px) {
+  .physician-reviews .physician-reviews-wrapper .physician-reviews-item .video-image img {
+    height: 300px;
+  }
+}
 .physician-reviews .physician-reviews-wrapper .physician-reviews-item .video-image .play-btn {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 @media (max-width: 991px) {
   .physician-reviews .physician-reviews-wrapper .physician-reviews-item .video-image .play-btn {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .physician-reviews .physician-reviews-wrapper .physician-reviews-item .physician-reviews-item-desc {
+    text-align: center;
   }
 }
 .physician-reviews .physician-reviews-wrapper .physician-reviews-item .physician-reviews-item-desc h3 {
@@ -3353,6 +3529,11 @@ footer .footer-bottom .socials a {
 .general-reviews {
   padding: 80px 0;
 }
+@media (max-width: 767px) {
+  .general-reviews {
+    padding: 40px 0;
+  }
+}
 .general-reviews h2 {
   text-align: center;
   margin-bottom: 30px;
@@ -3361,6 +3542,11 @@ footer .footer-bottom .socials a {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 30px;
+}
+@media (max-width: 991px) {
+  .general-reviews .general-reviews-wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 .general-reviews .general-reviews-wrapper .general-reviews-wrapper-item {
   background: white;
@@ -3371,14 +3557,37 @@ footer .footer-bottom .socials a {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 767px) {
+  .general-reviews .general-reviews-wrapper .general-reviews-wrapper-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .image {
   min-width: 120px;
   height: 120px;
+}
+@media (max-width: 767px) {
+  .general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .image {
+    min-width: auto;
+    width: 100%;
+    height: 200px;
+  }
 }
 .general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .image img {
   min-width: 120px;
   height: 120px;
   border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .image img {
+    min-width: auto;
+    width: 100%;
+    border-radius: 16px;
+    height: 200px;
+  }
 }
 .general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .description h4 {
   font-size: 24px;
@@ -3387,6 +3596,12 @@ footer .footer-bottom .socials a {
   font-weight: 400;
   font-family: "Red Hat Display", sans-serif;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .description h4 {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 .general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .description p {
   margin: 12px 0;
@@ -3405,6 +3620,12 @@ footer .footer-bottom .socials a {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+@media (max-width: 767px) {
+  .general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .description p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
 .general-reviews .general-reviews-wrapper .general-reviews-wrapper-item .description span {
   font-size: 16px;
   line-height: 25px;
@@ -3415,6 +3636,7 @@ footer .footer-bottom .socials a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 600;
   gap: 12px;
   cursor: pointer;
 }
@@ -3427,6 +3649,11 @@ footer .footer-bottom .socials a {
   background: white;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .reviews-image {
+    padding: 40px 20px;
+  }
+}
 .reviews-image img {
   max-width: 975px;
   height: 924px;
@@ -3435,6 +3662,19 @@ footer .footer-bottom .socials a {
      object-fit: cover;
   margin: 0 auto;
   display: block;
+}
+@media (max-width: 767px) {
+  .reviews-image img {
+    display: none;
+  }
+}
+.reviews-image .mobile-image {
+  display: none;
+}
+@media (max-width: 767px) {
+  .reviews-image .mobile-image {
+    display: block;
+  }
 }
 
 .resperate-reviews .recomendation-block {
@@ -3870,12 +4110,25 @@ footer .footer-bottom .socials a {
 .clinical-proof {
   background: #F1F1F1;
 }
+@media (max-width: 991px) {
+  .clinical-proof {
+    width: 100%;
+  }
+}
 .clinical-proof .banner {
-  height: 792px;
+  min-height: 792px;
+  padding-bottom: 0;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#003467), to(#00254A));
   background: -o-linear-gradient(top, #003467 0%, #00254A 100%);
   background: linear-gradient(180deg, #003467 0%, #00254A 100%);
+}
+@media (max-width: 991px) {
+  .clinical-proof .banner {
+    height: auto;
+    margin: auto;
+    padding-bottom: 40px;
+  }
 }
 .clinical-proof .banner .wrapper {
   display: grid;
@@ -3884,6 +4137,20 @@ footer .footer-bottom .socials a {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+}
+@media (max-width: 1200px) {
+  .clinical-proof .banner .wrapper {
+    padding: 0 20px;
+    gap: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .clinical-proof .banner .wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 0 20px;
+    width: 100%;
+    margin: auto;
+  }
 }
 .clinical-proof .banner .wrapper .description h1 {
   color: white;
@@ -3896,6 +4163,12 @@ footer .footer-bottom .socials a {
   color: #CEDFEF;
   margin: 0;
 }
+@media (max-width: 991px) {
+  .clinical-proof .banner .wrapper .description p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
 .clinical-proof .banner .wrapper .description .btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3905,6 +4178,20 @@ footer .footer-bottom .socials a {
           align-items: center;
   gap: 16px;
   margin-top: 24px;
+}
+@media (max-width: 991px) {
+  .clinical-proof .banner .wrapper .description .btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+  }
+}
+@media (max-width: 991px) {
+  .clinical-proof .banner .wrapper .description .btns button {
+    width: 100%;
+  }
 }
 .clinical-proof .banner .wrapper .description .btns button:last-child {
   border: none;
@@ -3930,6 +4217,11 @@ footer .footer-bottom .socials a {
 .clinical-proof .banner .wrapper .image {
   font-size: 0;
 }
+@media (max-width: 991px) {
+  .clinical-proof .banner .wrapper .image {
+    margin-top: 28px;
+  }
+}
 .clinical-proof .banner .wrapper .image img {
   height: 480px;
   width: 100%;
@@ -3937,9 +4229,29 @@ footer .footer-bottom .socials a {
      object-fit: cover;
   border-radius: 40px;
 }
+@media (max-width: 991px) {
+  .clinical-proof .banner .wrapper .image img {
+    height: 282px;
+  }
+}
 .clinical-proof .banner .information-block {
   background: transparent;
   padding-top: 60px;
+  margin-bottom: 0;
+}
+.clinical-proof .banner .information-block .information-block-wrapper {
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .clinical-proof .banner .information-block .information-block-wrapper {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 991px) {
+  .clinical-proof .banner .information-block {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
 }
 .clinical-proof .banner .information-block .information-item {
   background: rgba(255, 255, 255, 0.1);
@@ -3958,15 +4270,27 @@ footer .footer-bottom .socials a {
   padding: 80px 0;
   background: white;
 }
+@media (max-width: 1200px) {
+  .hypertension-treatment {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 @media (max-width: 991px) {
   .hypertension-treatment {
-    padding: 470px 0;
+    padding: 40px 20px;
   }
 }
 .hypertension-treatment .section-title {
   margin-bottom: 30px;
   max-width: 570px;
   width: 100%;
+}
+@media (max-width: 991px) {
+  .hypertension-treatment .section-title {
+    text-align: center;
+    max-width: 100%;
+  }
 }
 .hypertension-treatment .wrapper {
   display: grid;
@@ -3976,9 +4300,23 @@ footer .footer-bottom .socials a {
           column-gap: 30px;
   row-gap: 20px;
 }
+@media (max-width: 991px) {
+  .hypertension-treatment .wrapper {
+    gap: 20px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
 .hypertension-treatment .wrapper .item {
   padding-bottom: 26px;
   border-bottom: 1px solid #EBEBEB;
+}
+@media (max-width: 991px) {
+  .hypertension-treatment .wrapper .item {
+    background: #F7F7F7;
+    border-radius: 20px;
+    padding: 20px;
+    border-bottom: none;
+  }
 }
 .hypertension-treatment .wrapper .item:nth-last-child(-n+2) {
   border-bottom: none;
@@ -4008,6 +4346,13 @@ footer .footer-bottom .socials a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 991px) {
+  .hypertension-treatment .wrapper .item .icons-wrapper .icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+  }
+}
 .hypertension-treatment .wrapper .item .icons-wrapper .icon img {
   width: 40px;
   height: 40px;
@@ -4026,11 +4371,21 @@ footer .footer-bottom .socials a {
   line-height: 25px;
   max-height: 104px;
 }
+@media (max-width: 991px) {
+  .hypertension-treatment .wrapper .item p {
+    max-height: initial;
+  }
+}
 
 .clinical-trials {
   padding: 80px 20px;
   width: 100%;
   background: #F1F1F1;
+}
+@media (max-width: 991px) {
+  .clinical-trials {
+    padding-bottom: 0;
+  }
 }
 .clinical-trials .wrapper {
   display: -webkit-box;
@@ -4044,12 +4399,25 @@ footer .footer-bottom .socials a {
   max-width: 1472px;
   margin: auto;
 }
+@media (max-width: 991px) {
+  .clinical-trials .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .clinical-trials .wrapper .description {
   max-width: 851px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 991px) {
+  .clinical-trials .wrapper .description {
+    padding: 40px 20px;
+  }
 }
 .clinical-trials .wrapper .description .inner {
   max-width: 600px;
@@ -4063,6 +4431,12 @@ footer .footer-bottom .socials a {
   font-weight: 400;
   font-family: "Red Hat Display", sans-serif;
   margin: 0;
+}
+@media (max-width: 991px) {
+  .clinical-trials .wrapper .description .inner h3 {
+    font-size: 24px;
+    line-height: 31px;
+  }
 }
 .clinical-trials .wrapper .description .inner p {
   font-size: 18px;
@@ -4088,6 +4462,12 @@ footer .footer-bottom .socials a {
 .clinical-trials .wrapper .description .inner .note {
   margin-top: 85px;
 }
+@media (max-width: 991px) {
+  .clinical-trials .wrapper .description .inner .note {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
 .clinical-trials .wrapper .description .inner .note span {
   font-size: 20px;
   color: white;
@@ -4104,10 +4484,21 @@ footer .footer-bottom .socials a {
      object-fit: cover;
   border-radius: 0 40px 40px 0;
 }
+@media (max-width: 991px) {
+  .clinical-trials .wrapper .image img {
+    height: 372px;
+    border-radius: 0 0 20px 20px;
+  }
+}
 
 .health-information {
   background: #F1F1F1;
   padding: 13px 0 93px;
+}
+@media (max-width: 991px) {
+  .health-information {
+    padding-bottom: 0;
+  }
 }
 .health-information .wrapper {
   display: -webkit-box;
@@ -4122,6 +4513,16 @@ footer .footer-bottom .socials a {
   gap: 50px;
   padding: 80px 0;
 }
+@media (max-width: 991px) {
+  .health-information .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+}
 .health-information .wrapper:nth-child(even) {
   background: white;
   -webkit-box-orient: horizontal;
@@ -4130,6 +4531,14 @@ footer .footer-bottom .socials a {
           flex-direction: row-reverse;
   margin: 0 20px;
   border-radius: 40px;
+}
+@media (max-width: 991px) {
+  .health-information .wrapper:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 .health-information .wrapper .image {
   font-size: 0;
@@ -4141,6 +4550,11 @@ footer .footer-bottom .socials a {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
+}
+@media (max-width: 991px) {
+  .health-information .wrapper .image img {
+    height: 274px;
+  }
 }
 .health-information .wrapper .description {
   max-width: 567px;
@@ -4155,11 +4569,23 @@ footer .footer-bottom .socials a {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 400;
 }
+@media (max-width: 991px) {
+  .health-information .wrapper .description h3 {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
 .health-information .wrapper .description p {
   font-size: 18px;
   line-height: 28px;
   color: #535353;
   margin-bottom: 12px;
+}
+@media (max-width: 991px) {
+  .health-information .wrapper .description p {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 .references {
@@ -4167,13 +4593,26 @@ footer .footer-bottom .socials a {
   border-radius: 40px;
   padding: 80px 91px;
 }
+@media (max-width: 991px) {
+  .references {
+    padding: 40px 20px;
+  }
+}
 .references h2 {
   margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+  .references h2 {
+    margin-bottom: 30px;
+  }
 }
 .references .links-group .links-item {
   border-bottom: 1px solid #EBEBEB;
   padding-bottom: 30px;
   margin-bottom: 30px;
+}
+.references .links-group .links-item:last-child {
+  margin-bottom: 0;
 }
 .references .links-group .links-item h4 {
   font-size: 24px;
@@ -4183,16 +4622,34 @@ footer .footer-bottom .socials a {
   margin-top: 0;
   margin-bottom: 20px;
 }
+@media (max-width: 991px) {
+  .references .links-group .links-item h4 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 .references .links-group .links-item ol {
   padding-left: 14px;
   margin: 0;
 }
 .references .links-group .links-item ol li {
+  color: #0D5AA6;
+  margin-bottom: 12px;
+}
+.references .links-group .links-item ol li.disable {
+  color: #535353;
+}
+.references .links-group .links-item ol li a {
   font-size: 14px;
   color: #0D5AA6;
   line-height: 22px;
   font-weight: 600;
-  margin-bottom: 12px;
+}
+.references .links-group .links-item ol li a.disable {
+  color: #535353;
+}
+.references .links-group .links-item ol li:last-child {
+  margin-bottom: 0;
 }
 .block-wrapper {
   display: grid;

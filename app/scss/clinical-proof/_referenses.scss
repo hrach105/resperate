@@ -2,14 +2,23 @@
   background: white;
   border-radius: 40px;
   padding: 80px 91px;
+  @media(max-width: 991px) {
+    padding: 40px 20px;
+  }
   h2 {
     margin-bottom: 40px;
+    @media(max-width: 991px) {
+      margin-bottom: 30px;
+    }
   }
   .links-group {
     .links-item {
       border-bottom: 1px solid #EBEBEB;
       padding-bottom: 30px;
       margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
       h4 {
         font-size: 24px;
         line-height: 31px;
@@ -17,16 +26,32 @@
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 20px;
+        @media(max-width: 991px) {
+          font-size: 20px;
+          line-height: 26px;
+        }
       }
       ol {
         padding-left: 14px;
         margin: 0;
         li {
-          font-size: 14px;
           color: #0D5AA6;
-          line-height: 22px;
-          font-weight: 600;
           margin-bottom: 12px;
+          &.disable {
+            color: #535353;
+          }
+          a {
+            font-size: 14px;
+            color: #0D5AA6;
+            line-height: 22px;
+            font-weight: 600;
+            &.disable {
+              color: #535353;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
     }
