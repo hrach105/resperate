@@ -12,17 +12,30 @@
       line-height: 28px;
       font-weight: 500;
       color: #151515;
+      @media(max-width: 991px) {
+        margin-top: 16px;
+        font-size: 18px;
+      }
     }
   }
   .rating-block {
     max-width: 690px;
     width: 100%;
     margin: 30px auto 0;
+    @media(max-width: 991px) {
+      margin: 20px auto 0;
+      max-width: 335px;
+      padding: 12px;
+    }
     .rate {
       flex-direction: row;
       display: flex;
       align-items: center;
       gap: 12px;
+      @media(max-width: 991px) {
+        flex-direction: column;
+        gap: 6px;
+      }
       .rate-wrapper {
         margin-bottom: 0;
       }
@@ -32,9 +45,22 @@
       align-items: center;
       display: flex;
       gap: 12px;
+      @media(max-width: 991px) {
+        flex-direction: column;
+        gap: 6px;
+      }
       .peoples {
         margin-bottom: 0;
       }
+      span {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+  .faq {
+    @media(max-width: 991px) {
+      padding: 0;
     }
   }
 }

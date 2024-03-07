@@ -1,0 +1,125 @@
+.info-about-products {
+  padding: 80px 0;
+  @media(max-width: 1200px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media(max-width: 991px) {
+    padding: 40px 20px;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    @media(max-width: 991px) {
+      flex-direction: column;
+    }
+    .image-gallery {
+      max-width: 670px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      @media(max-width: 767px) {
+        gap: 15px;
+      }
+      .main-image {
+        font-size: 0;
+        background: white;
+        width: 100%;
+        min-height: 384px;
+        display: flex;
+        padding-top: 21px;
+        border-radius: 30px;
+        @media(max-width: 991px) {
+          min-height: 335px;
+        }
+        img {
+          max-width: 540px;
+          width: 100%;
+          margin: 0 auto;
+          display: block;
+          object-fit: cover;
+          height: 377px;
+          @media(max-width: 991px) {
+            object-fit: contain;
+            height: 220px;
+          }
+        }
+      }
+      img {
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 30px;
+        @media(max-width: 767px) {
+          width: 160px;
+          height: 160px;
+        }
+      }
+    }
+    .dropdowns {
+      max-width: 470px;
+      width: 100%;
+      .dropdown-item {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        .dropdown-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          p {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 20px;
+            line-height: 26px;
+            color: #151515;
+            font-weight: 400;
+            font-family: "Red Hat Display", sans-serif;
+          }
+          .arrow {
+            transition: .5s;
+            &.rotate {
+            transform: rotate(180deg);
+              transition: .5s;
+          }
+          }
+        }
+        .drop-down-content {
+          margin-top: 20px;
+          ul {
+            li {
+              border-bottom: 1px solid #EBEBEB;
+              font-size: 16px;
+              line-height: 25px;
+              font-weight: 400;
+              color: #151515;
+              padding: 12px 0;
+            }
+          }
+        }
+        &.technical-specs {
+          ul {
+            li {
+              display: flex;
+              justify-content: space-between;
+              .key {
+                font-weight: 500;
+                max-width: 180px;
+                width: 100%;
+              }
+              .value {
+                max-width: 210px;
+                color: #535353;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
