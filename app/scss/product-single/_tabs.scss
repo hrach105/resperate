@@ -1,0 +1,22 @@
+.product_single_page {
+  .tabs {
+    padding-top: 40px;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    @media(max-width: 991px) {
+        display: none;
+    }
+    a {
+      padding: 20px 32px;
+      font-size: 20px;
+      line-height: 20px;
+      color: #535353;
+      font-weight: 700;
+      border-bottom: 2px solid transparent;
+      &.active {
+        color: #151515;
+        border-color: #FF7E00;
+      }
+    }
+  }
+}

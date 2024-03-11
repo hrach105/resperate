@@ -24,7 +24,9 @@
     min-height: 478px;
     display: flex;
     align-items: center;
-
+      @media(max-width: 991px) {
+        padding: 0;
+      }
     .wrapper {
       display: grid;
       gap: 17px;
@@ -55,6 +57,11 @@
             height: 90px;
             top: -10%;
             left: -15%;
+          }
+          @media(max-width: 425px) {
+
+            top: -14%;
+            left: -10%;
           }
           p {
             font-size: 18px;

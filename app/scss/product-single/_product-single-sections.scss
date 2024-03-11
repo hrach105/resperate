@@ -1,0 +1,38 @@
+.out-commitment-block {
+  background: #f1f1f1;
+  padding: 80px 0;
+  @media(max-width: 991px) {
+    padding: 40px 0 160px;
+  }
+  h2 {
+    max-width: 570px;
+    margin-bottom: 30px;
+    @media(max-width: 991px) {
+      text-align: center;
+      font-size: 24px;
+      line-height: 31px;
+      max-width: 335px;
+      width: 100%;
+      margin: 0 auto 30px;
+    }
+  }
+
+}
+.recomendation-products {
+  background: #f1f1f1;
+  padding: 80px 0;
+  h2 {
+    text-align: center;
+  }
+  .products-wrapper {
+    margin-top: 30px;
+  }
+}
+#details {
+  .info-about-products {
+    background: #f1f1f1;
+    @media(max-width: 991px) {
+      padding-bottom: 0;
+    }
+  }
+}

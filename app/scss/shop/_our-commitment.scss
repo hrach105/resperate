@@ -14,47 +14,7 @@
     margin-bottom: 30px;
     text-align: center;
   }
-  .boxes-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4,minmax(0,1fr));
-    gap: 30px;
-    @media(max-width: 1200px) {
-     padding: 0 20px;
-      grid-template-columns: repeat(3,minmax(0,1fr));
-    }
 
-    @media(max-width: 767px) {
-      grid-template-columns: repeat(2,minmax(0,1fr));
-      gap: 15px;
-    }
-    @media(max-width: 600px) {
-      grid-template-columns: repeat(1,minmax(0,1fr));
-      gap: 15px;
-    }
-    .box-item {
-      background: #F7F7F7;
-      border: 1px solid #f1f1f1;
-      padding: 20px;
-      text-align: center;
-      border-radius: 20px;
-      img {
-
-      }
-      h5 {
-        margin: 16px 0 8px;
-        font-size: 20px;
-        line-height: 32px;
-        font-weight: 500;
-        color: #151515;
-      }
-      p {
-        margin: 0;
-        font-size: 14px;
-        line-height: 22px;
-        color: #535353;
-      }
-    }
-  }
   .our-commitment-banner {
     display: flex;
     justify-content: center;
@@ -142,6 +102,47 @@
           border-radius: 0 0px 20px 20px;
         }
       }
+    }
+  }
+}
+.boxes-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 30px;
+  @media(max-width: 1200px) {
+    padding: 0 20px;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+  }
+
+  @media(max-width: 767px) {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 15px;
+  }
+  @media(max-width: 600px) {
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    gap: 15px;
+  }
+  .box-item {
+    background: #F7F7F7;
+    border: 1px solid #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    img {
+
+    }
+    h5 {
+      margin: 16px 0 8px;
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 500;
+      color: #151515;
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 22px;
+      color: #535353;
     }
   }
 }

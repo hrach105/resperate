@@ -99,6 +99,9 @@ header {
       line-height: 16px;
       padding: 0 41px;
       text-transform: capitalize;
+      @media(max-width: 991px) {
+        display: none;
+      }
     }
 
     .burger-menu {

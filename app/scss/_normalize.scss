@@ -28,6 +28,9 @@ body {
 	font-family: "Manrope", sans-serif;
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+}
 * {
 	box-sizing: border-box;
 }
@@ -153,13 +156,7 @@ small {
  * all browsers.
  */
 
-sub,
-sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
+
 
 sub {
 	bottom: -0.25em;

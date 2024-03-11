@@ -32,15 +32,15 @@
         padding-top: 21px;
         border-radius: 30px;
         @media(max-width: 991px) {
-          min-height: 335px;
+          min-height: auto;
         }
         img {
-          max-width: 540px;
+
           width: 100%;
           margin: 0 auto;
           display: block;
-          object-fit: cover;
-          height: 377px;
+          object-fit: contain;
+          height: 384px;
           @media(max-width: 991px) {
             object-fit: contain;
             height: 220px;
@@ -58,6 +58,7 @@
         }
       }
     }
+
     .dropdowns {
       max-width: 470px;
       width: 100%;
