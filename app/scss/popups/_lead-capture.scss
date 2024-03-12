@@ -135,3 +135,223 @@
   min-width: 20px;
   height: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.order-details-popup {
+  max-width: 470px;
+  width: 100%;
+  border-radius: 40px;
+  background: white;
+  padding: 72px 32px 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  @media(max-width: 767px) {
+    padding: 72px 20px 20px;
+    border-radius: 20px;
+    max-width: 335px;
+  }
+  .close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .popup-content {
+    h4 {
+      font-size: 24px;
+      line-height: 31px;
+      font-weight: 400;
+      font-family: "Red Hat Display", sans-serif;
+      color: #151515;
+      margin: 0 0 16px;
+      text-align: center;
+      @media(max-width: 767px) {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 12px;
+      }
+    }
+    h5 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 400;
+      font-family: "Red Hat Display", sans-serif;
+      color: #151515;
+      text-align: center;
+      @media(max-width: 767px) {
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+    span {
+      margin-top: 12px;
+      font-size: 14px;
+      line-height: 22px;
+      color: #535353;
+      display: block;
+      text-align: center;
+      @media(max-width: 767px) {
+
+        margin-top: 8px;
+      }
+    }
+    ul {
+      margin: 24px 0;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #E3E3E3;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      list-style: none;
+      li {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 700;
+        color: #151515;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media(max-width: 767px) {
+          font-size: 14px;
+          line-height: 22px;
+        }
+        span {
+          color: #535353;
+          font-size: 16px;
+          line-height: 25px;
+          font-weight: 400;
+          margin-top: 0;
+          @media(max-width: 767px) {
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+      }
+      &#total {
+        border-bottom: none;
+        padding-bottom: 0;
+        li {
+          font-size: 18px;
+          line-height: 28px;
+          span {
+            font-size: 18px;
+            font-weight: 700;
+          }
+        }
+      }
+
+    }
+    button {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+.clinical-proof-popup {
+  max-width: 662px;
+  width: 100%;
+  border-radius: 40px;
+  background: white;
+  padding: 70px 16px 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  @media(max-width: 767px) {
+    padding: 60px 20px 60px;
+    border-radius: 20px;
+    max-width: 335px;
+  }
+  .close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .popup-content {
+    .heading {
+      text-align: center;
+      h4 {
+        font-size: 24px;
+        line-height: 31px;
+        font-weight: 400;
+        font-family: "Red Hat Display", sans-serif;
+        margin-bottom: 12px;
+        margin-top: 0;
+        @media(max-width: 767px) {
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+      p {
+        max-width: 470px;
+        font-size: 16px;
+        line-height: 25px;
+        color: #535353;
+        margin: 0 auto 12px;
+        @media(max-width: 767px) {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12px;
+        gap: 12px;
+        font-size: 16px;
+        line-height: 25px;
+        color: #002143;
+        font-weight: 600;
+      }
+    }
+    .descript {
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 400;
+      color: #535353;
+      margin-top: 20px;
+      margin-bottom: 12px;
+      padding: 0 24px;
+      @media(max-width: 767px) {
+        padding: 0;
+      }
+    }
+    .note {
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 500;
+      color: #151515;
+      padding: 0 24px;
+      @media(max-width: 767px) {
+        padding: 0;
+      }
+      span {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #151515;
+
+      }
+    }
+  }
+}

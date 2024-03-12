@@ -5863,6 +5863,246 @@ footer .footer-bottom .socials a {
   height: 20px;
 }
 
+.order-details-popup {
+  max-width: 470px;
+  width: 100%;
+  border-radius: 40px;
+  background: white;
+  padding: 72px 32px 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .order-details-popup {
+    padding: 72px 20px 20px;
+    border-radius: 20px;
+    max-width: 335px;
+  }
+}
+.order-details-popup .close-popup {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.order-details-popup .popup-content h4 {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 400;
+  font-family: "Red Hat Display", sans-serif;
+  color: #151515;
+  margin: 0 0 16px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .order-details-popup .popup-content h4 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+}
+.order-details-popup .popup-content h5 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Red Hat Display", sans-serif;
+  color: #151515;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .order-details-popup .popup-content h5 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+.order-details-popup .popup-content span {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #535353;
+  display: block;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .order-details-popup .popup-content span {
+    margin-top: 8px;
+  }
+}
+.order-details-popup .popup-content ul {
+  margin: 24px 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E3E3E3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+.order-details-popup .popup-content ul li {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #151515;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .order-details-popup .popup-content ul li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.order-details-popup .popup-content ul li span {
+  color: #535353;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  .order-details-popup .popup-content ul li span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.order-details-popup .popup-content ul#total {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.order-details-popup .popup-content ul#total li {
+  font-size: 18px;
+  line-height: 28px;
+}
+.order-details-popup .popup-content ul#total li span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.order-details-popup .popup-content button {
+  width: 100%;
+}
+
+.clinical-proof-popup {
+  max-width: 662px;
+  width: 100%;
+  border-radius: 40px;
+  background: white;
+  padding: 70px 16px 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .clinical-proof-popup {
+    padding: 60px 20px 60px;
+    border-radius: 20px;
+    max-width: 335px;
+  }
+}
+.clinical-proof-popup .close-popup {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.clinical-proof-popup .popup-content .heading {
+  text-align: center;
+}
+.clinical-proof-popup .popup-content .heading h4 {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 400;
+  font-family: "Red Hat Display", sans-serif;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  .clinical-proof-popup .popup-content .heading h4 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.clinical-proof-popup .popup-content .heading p {
+  max-width: 470px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #535353;
+  margin: 0 auto 12px;
+}
+@media (max-width: 767px) {
+  .clinical-proof-popup .popup-content .heading p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.clinical-proof-popup .popup-content .heading a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12px;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #002143;
+  font-weight: 600;
+}
+.clinical-proof-popup .popup-content .descript {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #535353;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  padding: 0 24px;
+}
+@media (max-width: 767px) {
+  .clinical-proof-popup .popup-content .descript {
+    padding: 0;
+  }
+}
+.clinical-proof-popup .popup-content .note {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #151515;
+  padding: 0 24px;
+}
+@media (max-width: 767px) {
+  .clinical-proof-popup .popup-content .note {
+    padding: 0;
+  }
+}
+.clinical-proof-popup .popup-content .note span {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #151515;
+}
+
 .product_single_page .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
