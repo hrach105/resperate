@@ -7,7 +7,7 @@
   margin: 0;
   text-transform: capitalize;
   @media(max-width: 991px) {
-    font-size: 40px;
+    font-size: 40px !important;
     line-height: 44px;
   }
 }
