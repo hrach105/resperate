@@ -391,6 +391,9 @@ ul li a {
   color: white;
   cursor: pointer;
 }
+.main-btn.disabled {
+  background: #BDBDBD !important;
+}
 
 li.current-menu-item a {
   color: #D36800 !important;

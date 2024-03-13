@@ -429,6 +429,9 @@ ul {
 	font-weight: 700;
 	color: white;
 	cursor: pointer;
+	&.disabled {
+		background: #BDBDBD !important;
+	}
 }
 li {
 	&.current-menu-item {
