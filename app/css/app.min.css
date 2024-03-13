@@ -1252,7 +1252,6 @@ header .mobile-menu.show a.shop-now {
     max-width: 295px;
   }
 }
-
 .price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1278,6 +1277,7 @@ header .mobile-menu.show a.shop-now {
 .price p sup {
   font-size: 20px;
 }
+
 
 .simple-effective {
   width: 100%;
