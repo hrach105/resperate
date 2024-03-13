@@ -1252,6 +1252,7 @@ header .mobile-menu.show a.shop-now {
     max-width: 295px;
   }
 }
+
 .price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1277,7 +1278,6 @@ header .mobile-menu.show a.shop-now {
 .price p sup {
   font-size: 20px;
 }
-
 
 .simple-effective {
   width: 100%;
@@ -2719,6 +2719,7 @@ footer .footer-bottom .socials a {
   border-radius: 20px;
   -webkit-box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+  font-size: 0;
 }
 .block-wrapper .block-image img {
   width: 100%;
@@ -6636,6 +6637,7 @@ footer .footer-bottom .socials a {
   border-radius: 20px;
   -webkit-box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+  font-size: 0;
 }
 .block-wrapper .block-image img {
   width: 100%;
