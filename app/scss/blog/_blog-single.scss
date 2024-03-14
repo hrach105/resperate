@@ -1,0 +1,17 @@
+.blog-single {
+
+  width: 100%;
+  margin: 0 auto;
+  .blog-single-item {
+    margin-bottom: 40px;
+    img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      border-radius: 12px;
+      @media(max-width: 991px) {
+        height: 350px;
+      }
+    }
+  }
+}
