@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
+    <title>checkout</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,55 +78,292 @@
         <a href="#" class="shop-now">Shop Now</a>
     </div>
 </header>
+<div class="container">
+    <div class="coupon-block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M13.9993 0.666504C6.65268 0.666504 0.666016 6.65317 0.666016 13.9998C0.666016 21.3465 6.65268 27.3332 13.9993 27.3332C21.346 27.3332 27.3327 21.3465 27.3327 13.9998C27.3327 6.65317 21.346 0.666504 13.9993 0.666504ZM20.3727 10.9332L12.8127 18.4932C12.626 18.6798 12.3727 18.7865 12.106 18.7865C11.8393 18.7865 11.586 18.6798 11.3993 18.4932L7.62602 14.7198C7.23935 14.3332 7.23935 13.6932 7.62602 13.3065C8.01268 12.9198 8.65268 12.9198 9.03935 13.3065L12.106 16.3732L18.9594 9.51984C19.346 9.13317 19.986 9.13317 20.3727 9.51984C20.7593 9.9065 20.7593 10.5332 20.3727 10.9332Z" fill="#4AB866"/>
+        </svg>
+        <span>Coupon code applied successfully.</span>
+    </div>
+    <a class="product-baner" href="#" title="delux carry case">
+        <img src="./images/prod-baner.png" title="delux hard carry case" alt="resperate.com delux hard carry case">
+    </a>
+    <h1>Order summery</h1>
+    <div class="order-summery-wrapper">
 
-<main>
-    <div class="blog">
-        <div class="container">
-           <div class="wrapper">
-               <div class="blog-single">
-                   <div class="blog-single-item">
-                       <img src="./images/dr.jpg" title="post" alt="resperate.com blog single">
-                       <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aperiam aspernatur at autem beatae, consequuntur culpa deserunt dicta eligendi explicabo fugit id incidunt, magnam odio, perferendis praesentium quis recusandae rem repellat saepe soluta ut voluptate? Asperiores delectus deserunt dolor fugiat harum ipsam molestias, nemo omnis quidem sapiente similique, sit.</p>
-                   </div>
-                   <div class="blog-single-item">
-                       <img src="./images/dr.jpg" title="post" alt="resperate.com blog single">
-                       <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aperiam aspernatur at autem beatae, consequuntur culpa deserunt dicta eligendi explicabo fugit id incidunt, magnam odio, perferendis praesentium quis recusandae rem repellat saepe soluta ut voluptate? Asperiores delectus deserunt dolor fugiat harum ipsam molestias, nemo omnis quidem sapiente similique, sit.</p>
-                   </div>
-               </div>
-<!--               <div class="recent-posts">-->
-<!--                   <h2>Recent Posts</h2>-->
+        <div class="order-summer-item forms-side">
 
-<!--                   <div class="recent-post-item">-->
-<!--                       <a href="#" title="posts">-->
-<!--                           <img src="./images/dr.jpg" alt="resperate.com posts">-->
-<!--                           <h4>post title</h4>-->
-<!--                       </a>-->
-<!--                   </div>-->
-<!--                   <div class="recent-post-item">-->
-<!--                       <a href="#" title="posts">-->
-<!--                           <img src="./images/dr.jpg" alt="resperate.com posts">-->
-<!--                           <h4>post title</h4>-->
-<!--                       </a>-->
-<!--                   </div>-->
-<!--                   <div class="recent-post-item">-->
-<!--                       <a href="#" title="posts">-->
-<!--                           <img src="./images/dr.jpg" alt="resperate.com posts">-->
-<!--                           <h4>post title</h4>-->
-<!--                       </a>-->
-<!--                   </div>-->
-<!--                   <div class="recent-post-item">-->
-<!--                       <a href="#" title="posts">-->
-<!--                           <img src="./images/dr.jpg" alt="resperate.com posts">-->
-<!--                           <h4>post title</h4>-->
-<!--                       </a>-->
-<!--                   </div>-->
-<!--               </div>-->
-           </div>
+            <div class="order-one-click">
+                <span>Order in one click</span>
+                <div class="payment-buttons">
+                    <img src="./images/apple-pay.png" alt=" resperate.com apple pay">
+                    <img src="./images/paypal.png" alt=" resperate.com paypal">
+                </div>
+                <span>or</span>
+            </div>
+            <div class="forms__wrapper">
+                <div class="forms-item">
+                 <div class="forms-item-header">
+                     <span class="num">1</span>
+                     <h3>Billing details</h3>
+                 </div>
+                   <div class="fields-wrapper">
+                       <div class="fields">
+                           <input type="text" placeholder="First name">
+                           <input type="text" placeholder="Last name">
+                       </div>
+                       <select name="">
+                           <option value="">Country</option>
+                       </select>
+                       <select name="">
+                           <option value="">United States (U.S.)</option>
+                       </select>
+                       <select name="">
+                           <option value="">City</option>
+                       </select>
+                       <input type="text" placeholder="Postcode / ZIP*">
+                       <input type="text" placeholder="Street and house number">
+                       <input type="text" placeholder="Email*">
+                       <input type="text" placeholder="Phone number*">
+                       <div class="checkboxes">
+                           <label for="check">
+                               <input type="checkbox" id="check" hidden="">
+                               <span></span>
+                               Yes, email me product tips & updates
+                           </label>
+                           <label for="check2">
+                               <input type="checkbox" id="check2" hidden="">
+                               <span></span>
+                               Please text me product tracking & support SMS messages
+                           </label>
+                       </div>
+                   </div>
+                </div>
+                <div class="forms-item">
+                    <div class="forms-item-header">
+                        <span class="num">2</span>
+                        <h3>Shipping information</h3>
+                    </div>
+                    <div class="fields-wrapper">
+
+                        <select name="">
+                            <option value="">Choose shipping</option>
+                        </select>
+                       <div class="checkboxes">
+                           <label for="shiping">
+                               <input type="checkbox" id="shiping" hidden="">
+                               <span></span>
+                               Ship to a different address?
+                           </label>
+                       </div>
+                        <input type="text" placeholder="Notes about your order, e.g. special notes for delivery">
+                    </div>
+                </div>
+                <div class="forms-item payment-methods">
+                    <div class="forms-item-header">
+                        <span class="num">3</span>
+                        <h3>Payment method</h3>
+                    </div>
+                    <div class="fields-wrapper">
+                       <div class="radios">
+                           <label for="credit_card">
+                               <input type="radio" id="credit_card" name="payment">
+                               <span></span>
+                               Credit card
+                           </label>
+                       </div>
+                        <input type="text" placeholder="1234 1234 1234 1234">
+                        <div class="credit-cart-info">
+                            <input type="text" placeholder="MM / YY">
+                            <input type="text" placeholder="CVC">
+                        </div>
+                        <div class="radios">
+                            <label for="paypal">
+                                <input type="radio" id="paypal" name="payment">
+                                <span></span>
+                                Paypal
+                            </label>
+                            <label for="pay-later">
+                                <input type="radio" id="pay-later" name="payment">
+                                <span></span>
+                                Buy now, pay later
+                                <img src="./images/klarna.png" title="klarna" alt="resperate.com klarna">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <input class="order-now main-btn" type="submit" value="order now">
+                <p class="terms-of-use-text">By clicking “Place Order” button, you agree to our <a href="#" title="terms of use">Terms of Use</a></p>
+            </div>
+        </div>
+        <div class="order-summer-item products-side">
+            <h4>Summary</h4>
+            <div class="product__item">
+                <div class="image">
+                    <img src="./images/delux.png" alt="resperate.com delux">
+                </div>
+                <div class="descriptions">
+                    <a href="#" class="name" title="Deluxe Carry Care">Deluxe Carry Care</a>
+                    <span class="price">$8<sup>.74</sup> </span>
+                    <div class="product-quantity">
+                        <div class="increment-decrement">
+                            <button>
+                                <svg width="24" height="2" viewBox="0 0 24 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 1H22.5" stroke="#51526C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <span>1</span>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M0.75 6H11.25" stroke="#151515" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 11.25L6 0.75" stroke="#151515" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <span class="remove">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.87695 11.1224L11.122 6.87744" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.122 11.1224L6.87695 6.87744" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Remove
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product__item">
+                <div class="image">
+                    <img src="./images/delux.png" alt="resperate.com delux">
+                </div>
+                <div class="descriptions">
+                    <a href="#" class="name" title="Deluxe Carry Care">Deluxe Carry Care</a>
+                    <span class="price">$8<sup>.74</sup> </span>
+                    <div class="product-quantity">
+                        <div class="increment-decrement">
+                            <button>
+                                <svg width="24" height="2" viewBox="0 0 24 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 1H22.5" stroke="#51526C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <span>1</span>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M0.75 6H11.25" stroke="#151515" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 11.25L6 0.75" stroke="#151515" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <span class="remove">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.87695 11.1224L11.122 6.87744" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.122 11.1224L6.87695 6.87744" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Remove
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product__item">
+                <div class="image">
+                    <img src="./images/delux.png" alt="resperate.com delux">
+                </div>
+                <div class="descriptions">
+                    <a href="#" class="name" title="Deluxe Carry Care">Deluxe Carry Care</a>
+                    <span class="price">$8<sup>.74</sup> </span>
+                    <div class="product-quantity">
+                        <div class="increment-decrement">
+                            <button>
+                                <svg width="24" height="2" viewBox="0 0 24 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 1H22.5" stroke="#51526C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <span>1</span>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M0.75 6H11.25" stroke="#151515" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 11.25L6 0.75" stroke="#151515" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <span class="remove">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.87695 11.1224L11.122 6.87744" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.122 11.1224L6.87695 6.87744" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Remove
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product__item">
+                <div class="image">
+                    <img src="./images/delux.png" alt="resperate.com delux">
+                </div>
+                <div class="descriptions">
+                    <a href="#" class="name" title="Deluxe Carry Care">Deluxe Carry Care</a>
+                    <span class="price">$8<sup>.74</sup> </span>
+                    <div class="product-quantity">
+                        <div class="increment-decrement">
+                            <button>
+                                <svg width="24" height="2" viewBox="0 0 24 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 1H22.5" stroke="#51526C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <span>1</span>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M0.75 6H11.25" stroke="#151515" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 11.25L6 0.75" stroke="#151515" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <span class="remove">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.87695 11.1224L11.122 6.87744" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.122 11.1224L6.87695 6.87744" stroke="#002143" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Remove
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <ul class="totals">
+                <li>
+                    <p>Subtotal</p>
+                    <span>$189.38</span>
+                </li>
+                <li>
+                    <p>Coupon: astv2024</p>
+                    <span>As Seen on TV</span>
+                </li>
+                <li>
+                    <p>Shipping</p>
+                    <span>Free</span>
+                </li>
+                <li>
+                    <p>Tax</p>
+                    <span>$0.00</span>
+                </li>
+                <li>
+                    <p>Total</p>
+                    <span class="finish-total">$189.38</span>
+                </li>
+            </ul>
+            <div class="payment-info">
+                <img src="./images/klarna1.png" title="klarna" alt="resperatre.com klarna">
+                <div>
+                    <p>4 interest-free payments of $108.72</p>
+                    <a href="#" title="learn more">Learn more</a>
+                </div>
+            </div>
         </div>
     </div>
-</main>
+</div>
+
+
 
 <footer>
     <div class="main-container">
