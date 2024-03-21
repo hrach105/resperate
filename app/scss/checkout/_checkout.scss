@@ -2,10 +2,63 @@
   display: flex;
   justify-content: space-between;
   gap: 130px;
+  @media(max-width: 1200px) {
+    gap: 30px;
+    padding: 0 20px;
+  }
+  @media(max-width: 991px) {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
 }
 .product-baner {
   margin-bottom: 100px;
-  display: inline-block;
+  background: #F1F1F1;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  @media(max-width: 1200px) {
+    margin: 0 20px 40px;
+  }
+  @media(max-width: 767px) {
+    padding: 20px;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 335px;
+    margin: 0 auto;
+  }
+  .product-baner-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @media(max-width: 767px) {
+     gap: 24px;
+    }
+    img {
+      width: 84px;
+    }
+    p {
+      font-size: 32px;
+      line-height: 41px;
+      font-family: "Red Hat Display", sans-serif;
+      font-weight: 400;
+      color: #151515;
+      @media(max-width: 767px) {
+        font-size: 24px;
+        line-height: 31px;
+      }
+    }
+  }
+  button {
+    @media(max-width: 767px) {
+      width: 100%;
+    }
+  }
+  @media(max-width: 767px) {
+    margin-bottom: 40px;
+  }
 }
 .coupon-block {
   background:#E1FCE8;
@@ -15,6 +68,14 @@
   align-items: center;
   border-radius:20px;
   margin-bottom: 20px;
+  @media(max-width: 1200px) {
+    margin: 0 20px 20px;
+  }
+  @media(max-width: 767px) {
+    max-width: 335px;
+    width: 100%;
+    margin: 40px auto;
+  }
   span {
     font-size: 16px;
     color: #151515;
@@ -51,11 +112,18 @@
   justify-content: center;
   margin: 20px 0;
   gap: 16px;
+  @media(max-width: 767px) {
+    flex-direction: column;
+  }
 }
 .order-summer-item {
   &.forms-side {
     max-width: 570px;
     width:100%;
+    @media(max-width: 991px) {
+      padding: 0;
+      max-width:100% ;
+    }
     .forms__wrapper {
     margin-bottom: 80px;
     margin-top: 30px;
@@ -89,6 +157,10 @@
           font-family: "Red Hat Display", sans-serif;
           font-weight: 400;
           margin: 0;
+          @media(max-width: 767px) {
+            font-size: 24px;
+            line-height: 21px;
+          }
         }
       }
       .fields-wrapper {
@@ -99,8 +171,12 @@
           display: flex;
           align-items: center;
           gap: 14px;
+          @media(max-width: 767px) {
+            flex-direction: column;
+          }
           input {
             width: 100%;
+            padding-right: 20px;
           }
         }
         select {
@@ -110,6 +186,12 @@
           border-radius: 30px;
           height: 56px;
           border: 1px solid #CECECE;
+          appearance: none;
+          background-image: url('../images/arrow_down.png');
+          background-size: 10px;
+          background-repeat: no-repeat;
+          background-position:97%;
+          padding-right: 20px;
         }
         .checkboxes {
           display: flex;
@@ -173,6 +255,45 @@
     width: 100%;
     padding: 32px;
     height: max-content;
+    @media(max-width: 1200px) {
+      padding: 0;
+    }
+    @media(max-width: 991px) {
+      background: white;
+      max-width: 100%;
+    }
+    .dropdown-header {
+      align-items: center;
+      justify-content: space-between;
+      padding:19px 20px;
+      display: none;
+      p {
+        font-size: 18px;
+        font-weight: 700;
+        color: #151515;
+      }
+      @media(max-width: 767px) {
+        display: flex;
+        background: #F7F7F7;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        svg {
+          transition: .5s;
+          &.rotate {
+            transform: rotate(-180deg);
+            transition: .5s;
+          }
+        }
+      }
+    }
+    @media(max-width: 767px) {
+      padding: 0;
+      border-radius: 0;
+      max-width: 100%;
+    }
     h4 {
       font-size: 24px;
       line-height: 31px;
@@ -183,6 +304,13 @@
       margin: 0;
       border-bottom: 1px solid #E3E3E3;
     }
+    .product__wrapper {
+      @media(max-width: 767px) {
+        display: none;
+        padding: 0 20px 20px;
+        background: #F7F7F7;
+      }
+    }
     .product__item {
       display: flex;
       align-items: center;
@@ -190,6 +318,9 @@
       padding-bottom: 20px;
       border-bottom: 1px solid #E3E3E3;
       padding-top: 20px;
+      @media(max-width: 767px) {}
+        padding-bottom: 0;
+        border: none;
       .image {
         max-width: 92px;
         background: white;
@@ -219,6 +350,7 @@
           margin: 0;
           display: flex;
           gap: 0;
+          justify-content: flex-start;
         }
         .product-quantity {
           margin-top: 14px;
@@ -270,6 +402,10 @@
       }
     }
     .totals {
+      @media(max-width: 767px) {
+        border-top: 1px solid #E3E3E3;
+        margin-top: 20px;
+      }
       li {
         display: flex;
         align-items: center;
@@ -287,9 +423,16 @@
           font-size: 16px;
           line-height: 25px;
           font-weight: 400;
-          .finish-total {
+          @media(max-width: 767px) {
+            color: #151515;
+          }
+          &.finish-total {
             color: #535353;
             font-weight: 700;
+            @media(max-width: 767px) {
+              color: #151515;
+
+            }
           }
         }
       }
@@ -301,6 +444,9 @@
       display: flex;
       align-items: center;
       gap: 16px;
+      @media(max-width: 767px) {
+        margin:30px 20px 0;
+      }
       p {
         color: #151515;
         line-height: 25px;
@@ -343,4 +489,17 @@
   background: url("../images/fill-radio.png") !important;
   background-repeat: no-repeat !important;
   background-position: center !important
+}
+.page-title.checkout-title {
+  @media(max-width: 1200px) {
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width: 991px) {
+  .page-title.checkout-title {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-left: 0;
+  }
 }
